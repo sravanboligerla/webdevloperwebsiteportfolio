@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact Sravan..</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fonts/css/all.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800">
+    <link rel="stylesheet" href="./fonts/webfonts/proximanova-light-webfont.woff">
+    <link rel="stylesheet" href="./fonts/webfonts/neosans-medium-webfont.woff">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Teko&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">  
+    <script src="./js/JQuery.js"></script>
+    <style>
+         *{
+            box-sizing: border-box;
+            transition: all 0.55s ease-in-out;
+            font-family: 'Segoe UI','poppins';
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin:0px;
+            padding:0px;
+           
+             background-color: #171b43;
+            
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family:  'Segoe UI';
+        margin: 0;
+        padding: 0;
+        }   
+
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .navbar-nav .active a{
+           
+           background-image: linear-gradient(120deg,#d78205 20%, #ccc 100%);
+            border-radius:.4em;
+                    }
+            .nav-item1:focus,.nav-item1:hover{ 
+            border-bottom: 1px solid white;
+            border-bottom-left-radius: .4em;
+            border-bottom-right-radius: .4em;
+
+           }
+        .navbar-brand{
+            margin-left: -1em;
+        }
+        .brand{
+            width:2.7em;
+            height:2.5em;
+            position:relative;
+            left: .8em;
+            top:-.1em;
+        }
+        .bar {
+        display: block;
+        width: 1.5em;
+        height: .1em;
+        border-radius: 5px;
+        background-color: black;
+        margin: 6px 0px;
+    }
+  
+        .navbar-toggler{
+            border:none;
+            background: linear-gradient(120deg,#d78205 20%, #ccc 100%);
+        }
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler:active>.navbar{
+    background-color:#ccc;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin: .5em;
+}
+      .top-arrow{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display:none;
+            transition:all 2.35s ease-in-out 0s;
+        }
+        .top-disp{
+            display: block;
+            transition:all 2.35s ease-in-out 0s;
+            z-index: 55;
+        }
+        .contact {
+    padding-top: 1.5em;
+    
+}
+.contact .container{
+    background-color:#e9ecef;
+    padding:5%;
+    width: 89%;
+    border-radius:5px;
+}
+.main-btn {
+    background: #d78205;
+    color: #fff;
+    min-width: 4rem;
+    position: relative;
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: .8rem 2rem;
+    border: 2px solid #d78205;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 2em;
+}
+
+.main-btn:hover {
+    background:#171b43;
+    border: 2px solid #d78205;
+    color: white;
+}
+.contact .main-title h2 {
+    position: relative;
+    display: inline-block;
+    color: #d78205;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0;
+    padding-left: 1em;
+    padding-top: .2rem;
+    
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    z-index: 2;
+}
+
+.contact .main-title h2:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1.2rem;
+    right: -5rem;
+    width: 5rem;
+    border-top: 2px dotted #46454a;
+}
+.contact .main-title h2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: -90px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 3px solid #36353b;
+    background: #d78205;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    box-sizing: content-box;
+}
+.contact .main-title .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 95px;
+    height: 40px;
+    border: 1px dotted #46454a;
+    background: #7c7ba8;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+}
+
+.contact .contact-box {
+    position: relative;
+    padding: 1.5em 1em;
+    margin-bottom: 30px;
+    
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color:#0b0d21;
+    border-top:1px solid rgba(255,255,255,0.5);
+    border-left:1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+
+.contact .contact-box .title-box {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.contact .contact-box .title-box .icon-box {
+    float: left;
+    border: 1px solid #434247;
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    line-height: 43px;
+    background-color: #343338;
+    color: #d78205;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.contact .contact-box .title-box .name-box h4 {
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 45px;
+    text-transform: uppercase;    
+}
+
+.contact .contact-box .content-box {
+    font-size: 13px;
+}
+
+.contact .contact-box .content-box p {
+    margin-bottom: 0;
+    line-height: 20px;
+    font-weight: 600;
+    color: #2b2c2c;
+    text-align: center;
+}
+
+.contact .contact-box .number-box {
+    position: absolute;
+    right: -24px;
+    top: -24px;
+    width: 74px;
+    height: 70px;
+    line-height: 70px;
+    background: #343338;
+    border: 2px dotted #434247;
+    color: rgba(185, 185, 185, .1);
+    border-radius: 50%;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact .contact-box .number-box span {
+    position: absolute;
+    right: 28px;
+    top: 7px;
+    font-size: 24px;
+    color:#ccc;
+}
+.contact .contact-form {
+    margin-top: 1rem;
+    background: url('./images/map-img.png') center center no-repeat;
+    
+    background-size: cover;    
+}
+
+.contact .contact-form .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.contact .contact-form .form-group .form-control {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #5d5c60;
+    outline: none;
+    box-shadow: none;
+    height: 3rem;
+    padding: .8rem;
+    border-top-left-radius:0px;
+            border-bottom-left-radius:10px;
+            border-top-right-radius:2px; 
+            border-bottom-right-radius:10px;
+}
+
+.contact .contact-form .form-group textarea.form-control {
+    height: 120px;
+    resize: none;
+    padding-top: 18px;
+}
+
+.contact .contact-form .form-group .form-control:focus {
+    border: 1px solid #d78205;
+}
+#navi{
+    width:100%;
+}
+#navi img {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 2em;
+  height: auto;
+}
+#navi img.major {
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+#navi img.last {
+  margin-bottom: 3em;
+}
+#navi img.shadow {
+  border: #DDD solid 1px;
+}
+.social-disc {
+  list-style-type: none;
+  margin-top: 2rem;
+margin-left: -5rem;
+}
+.social-disc li {
+  height: 2rem;
+  margin-bottom: 0.7em;
+}
+.social-disc li a {
+  padding-left: 3em;
+  line-height: 1rem;
+  display: block;
+  
+  text-decoration: none;
+  
+  font-size: 1.3rem;
+}
+.social-disc li a.facebook {
+  background-position: 0px -547px;
+  color: #43609c;
+}
+.social-disc li a.twitter {
+  background-position: 0px -598px;
+  color: #5fc5ec;
+}
+.social-disc li a.linkedin {
+  background-position: 0px -700px;
+  color: #0982c0;
+}
+.social-disc li a:hover {
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  -webkit-opacity: 0.7;
+  opacity: 0.7;
+}
+p.intro{
+    font-size: 1.0rem;
+    font-family: "Poppins";
+    
+}
+#text-main h1{
+    font-size: 5.0rem;
+    font-family: "Teko";
+}
+.nopad-b{
+    margin-bottom: 5%;
+}
+#add {
+    margin-right: -210px;
+}
+       
+        .form-check-input,.form-check-label{
+            cursor:pointer;
+        }
+        .option1{
+            background-color:rgba(117, 125, 138, .7);
+            color:000;
+            width:50%;
+            border-top-left-radius:0px;
+            border-bottom-left-radius:10px;
+            border-top-right-radius:2px; 
+            border-bottom-right-radius:10px;
+        }
+        .option1:hover,.option1:hover{
+            background-color:rgba(117, 125, 138, 1);
+            color: white;
+        }
+        .option2{
+            background-color:rgba(114, 5, 247, .7);
+            color:000;
+            width:50%;
+            border-top-left-radius:0px;
+            border-bottom-left-radius:10px;
+            border-top-right-radius:2px; 
+            border-bottom-right-radius:10px;
+        }
+        .option2:hover,.option2:hover{
+            background-color:rgba(107, 13, 225, 1);
+            color: white;
+        }
+        .option3{
+            background-color:rgba(255, 205, 0, .7);
+            color:000;
+            width:50%;
+            border-top-left-radius:0px;
+            border-bottom-left-radius:10px;
+            border-top-right-radius:2px; 
+            border-bottom-right-radius:10px;
+        }
+        .option3:hover,.option3:hover{
+            background-color:rgba(228, 186, 52, 1);
+            color: white;
+        }
+
+        .footer {
+            background-color: #0b0d21;;
+            padding: 30px 0;
+            margin-top: 60px;
+            color: #d78205;
+            transition:background-color 0.55s ease-in-out 0s;
+            text-align: center;
+        }
+
+        .footer .logo {
+            display: inline-block;
+            position: relative;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            
+            color: white;
+            text-decoration: none;
+            transition:all 0.3s ease-in-out 0s;
+            text-align: center;
+        }
+        .footer .logo:hover{
+            color:#d78205;
+            transition:all 0.3s ease-in-out 0s;
+            cursor: pointer;
+        }
+       
+
+        .footer .footer-social-icons {
+            margin-bottom: 0;
+            padding: .5rem 0;
+            text-align: center;
+        }
+
+        .footer .footer-social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer .footer-social-icons li a {
+            display: inline-block;
+            font-size: 1.2rem;
+            width: 1.8rem;
+            height: 2rem;
+            line-height: 2rem;
+            text-align: center;
+            color: white;
+            transition:all 0.3s ease-in-out 0s;
+        }
+
+        .footer .footer-social-icons li a:hover {
+            color:#d78205;
+            transition:all 0.3s ease-in-out 0s;
+            cursor: pointer;
+        }
+
+        .footer .copyright p {
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 1.8;
+            margin: 0;
+            color:lightgray;
+        }
+
+        .footer .copyright p a {
+            color:black;
+        } @media (max-width: 991.98px) {
+
+.nav-item1:focus,.nav-item1:hover{
+border-left: 1px solid white;
+border-bottom:none;  
+border-bottom-left-radius: .4em;
+border-bottom-right-radius: none;
+border-top-left-radius: .4em;  
+}
+.navbar-nav.active:hover,.navbar-nav .active:focus{
+   border-left: none;
+}
+
+}
+@media (max-width:350px){
+.navbar-brand{
+margin-left:-2em;
+}
+}
+    
+        /* Large devices (desktops, less than 1200px) */
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+
+ 
+        }
+       /* Medium devices (tablets, less than 992px) */
+        @media (min-width: 768px) and (max-width: 1042px) {
+            .col-md-4{
+            width: 33.33333333%;
+            float: left;
+}
+
+        }
+        /* Small Devices */
+        @media (max-width: 767.98px) {
+        
+        }
+        /* Extra small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            
+        }
+        @media (max-width:460px){
+            .main-btn {
+    background: #d78205;
+    color: #fff;
+    min-width: 4rem;
+    position: relative;
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: .5rem 1.6rem;
+    border: 2px solid #d78205;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+            .social-disc li a {
+  padding-left: 3em;
+  line-height: 1rem;
+  display: block;
+  
+  text-decoration: none;
+  
+  font-size: 1.0rem;
+}
+            #text-main h1{
+    font-size: 3.0rem;
+    font-family: "Teko";
+}
+    .contact .main-title h2{
+        position: relative;
+    display: inline-block;
+    color: #d78205;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 1;
+    margin: 0;
+    padding-left: 1em;
+    padding-top: 1em;
+    
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    z-index: 2;
+}
+.contact .main-title h2:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1.2rem;
+    right: -5rem;
+    width: 5rem;
+    border-top: 2px dotted #46454a;
+}
+.contact .main-title h2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: -90px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 3px solid #36353b;
+    background: #d78205;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    box-sizing: content-box;
+}
+.contact .main-title .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 95px;
+    height: 40px;
+    border: 1px dotted #46454a;
+    background: #7c7ba8;
+    border-right: none;
+    z-index: -1;
+}
+    }
+    </style>
+</head>
+<body>
+    <div class="btn btn-warning top-arrow" id="top-btn" style="background-image: linear-gradient(120deg,#d78205 20%, #ccc 100%);;border-radius: 50%;">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <section id="section1">
+        <nav class="navbar navbar-expand-lg navbar-dark wow bounce "data-wow-duration="1s" data-wow-delay=".2s"style="background-color:rgba(11, 13, 33, 1);">
+            <a class="navbar-brand mr-auto wow fadeInLeft"data-wow-duration="2s" data-wow-delay=".3s" href="./index.html"><img class="brand" src="./images/logooooo-removebg-preview.png" alt="">Sravan.</a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="bar "></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+                <li class="nav-item nav-item1">
+                  <a class="nav-link" href="./index.html">Home </a>
+                </li>
+                <li class="nav-item nav-item1">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item nav-item1">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item nav-item1">
+                    <a class="nav-link" href="./services.html">Services</a>
+                  </li>
+                  <li class="nav-item active"style="color:white;">
+                    <a class="nav-link" href="./contact.html">Contact<span class="sr-only">(current)</span></a>
+                  </li>
+              </ul>
+            </div>
+        </nav>      
+    </section>
+      
+ 
+<!-- ========== Start Contact ========== -->
+        
+<section class="contact" id="contact">
+    <div class="container">
+        <section class="main nopad-b">
+			<div class="row">
+				<div id="text-main" class="col-md-6 wow fadeInLeft" data-wow-duration=".8s" data-wow-offset="100">
+					<h1>contact me</h1>
+					<p class="intro">Do you speak Telugu? It's ok if you don't, I speak English too.</p>
+					
+					<ul class="social-disc">
+						<li><a href="#" target="_blank" class="fab fa-facebook facebook">Like me on Facebook</a></li>
+						<li><a href="#" target="_blank" class="fab fa-twitter twitter">Follow me on Twitter</a></li>
+						<li><a href="#" target="_blank" class="fab fa-linkedin linkedin">Connect on LinkedIn</a></li>
+					</ul>
+
+				</div>
+				<div id="img-main" class="col-md-6 wow fadeInRight" data-wow-duration=".8s" data-wow-offset="100">
+					<img id="navi" class="major preload" src="./images/DejanHome.png" alt="Sravan character">
+				</div>
+			</div>
+
+		</section>
+        <div class="row ">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row wow fadeInUp" data-wow-duration=".8s" data-wow-offset="100">
+                    <div class="col-md-4">
+                        <div class="contact-box"data-tilt data-tilt-scale="1.1">
+                            <div class="title-box">
+                                <div class="icon-box">
+                                 <a target="_blank"href="https://goo.gl/maps/ZNXSdtFqS2rwjnjp9"><i style="color:#d78205;"class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="name-box">
+                                    <h4>Location</h4>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <p style="color:#2b2c2c;">Kavali,AndhraPradesh</p>
+                            </div></a>
+                            <div class="number-box"><span>01.</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-box"data-tilt data-tilt-scale="1.1">
+                            <div class="title-box">
+                                <div class="icon-box">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="name-box">
+                                    <h4>Email</h4>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <p><a href="#"style="color:#2b2c2c;">sksravan1234@gmail.com</a></p>
+                            </div>
+                            <div class="number-box"><span>02.</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-box"data-tilt data-tilt-scale="1.1">
+                            <div class="title-box">
+                                <div class="icon-box">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="name-box">
+                                    <h4>Phone</h4>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <p style="color:#2b2c2c;">+91 8374003656</p>
+                            </div>
+                            <div class="number-box"><span>03.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="main-title">
+                    <h2>Get In Touch
+                        <span class="holder"></span>
+                        
+                    </h2>
+                </div>
+                <form class="contact-form  wow bounce"data-wow-duration=".8s" data-wow-offset="100" action="#" method="post">
+                    <div class="row">
+                        
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group ">
+                         
+                                <div class="form-check  form-check-block">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label mt-2 p-2 text-center option1" for="inlineRadio1">Basic</label>
+                                  </div>
+                                  <div class="form-check  form-check-block">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label mt-2 p-2 text-center option2" for="inlineRadio2">Standard</label>
+                                  </div>
+                                  <div class="form-check form-check-block">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label mt-2 p-2 text-center option3" for="inlineRadio3">Premium</label>
+                                  </div>
+                              
+                            
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button Send Message  -->
+                   <div class="text-center"><button class="main-btn" type="submit" name="send">Send Message</button></div> 
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== End Contact ========== -->
+   
+
+<footer class="footer text-center" id="foot">
+    <div class="container">
+       <a class="logo" href="./index.html">Sravan.</a>
+        <ul class="footer-social-icons list-unstyled">
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-google-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="copyright">
+            <p>All Rights Reserved &copy; 2021</p>
+        </div>
+    </div>
+</footer> 
+<script>
+    window.onscroll=function(){
+      
+       if (window.scrollY>500){
+           document.getElementById("top-btn").classList.add("top-disp");
+          }
+       if (window.scrollY<500){
+           document.getElementById("top-btn").classList.remove("top-disp");
+         }
+      
+   };
+   document.getElementById("top-btn").onclick=function(){
+       window.scrollTo(0,0);
+   };
+ 
+  </script>
+          
+          
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/wow.js"></script>
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+       
+        </script>
+    <script>
+    
+    new WOW().init();
+    
+    </script>     
+</body>
+</html>    

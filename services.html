@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Services</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fonts/css/all.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800">
+    <link rel="stylesheet" href="./fonts/webfonts/proximanova-light-webfont.woff">
+    <link rel="stylesheet" href="./fonts/webfonts/neosans-medium-webfont.woff">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Teko&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">  
+    <script src="./js/JQuery.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            transition: all 0.55s ease-in-out;
+            font-family: 'Segoe UI','poppins';
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin:0px;
+            padding:0px;
+           
+            background-color: #171b43;
+           
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family:  'Segoe UI';
+        margin: 0;
+        padding: 0;
+        }   
+
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .navbar-nav .active a{
+           
+           background-image: linear-gradient(120deg,#d78205 20%, #ccc 100%);
+            border-radius:.4em;
+                    }
+            .nav-item1:focus,.nav-item1:hover{ 
+            border-bottom: 1px solid white;
+            border-bottom-left-radius: .4em;
+            border-bottom-right-radius: .4em;
+
+           }
+        .navbar-brand{
+            margin-left: -1em;
+        }
+        .brand{
+            width:2.7em;
+            height:2.5em;
+            position:relative;
+            left: .8em;
+            top:-.1em;
+        }
+        .bar {
+        display: block;
+        width: 1.5em;
+        height: .1em;
+        border-radius: 5px;
+        background-color: black;
+        margin: 6px 0px;
+    }
+  
+        .navbar-toggler{
+            border:none;
+            background: linear-gradient(120deg,#d78205 20%, #ccc 100%);
+        }
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler:active>.navbar{
+    background-color:#ccc;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin: .5em;
+}
+        .top-arrow{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display:none;
+            transition:all 2.35s ease-in-out 0s;
+        }
+        .top-disp{
+            display: block;
+            transition:all 2.35s ease-in-out 0s;
+            z-index: 55;
+        }
+       
+     .main-title h2 {
+    position: relative;
+    display: inline-block;
+    color: #d78205;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0;
+    padding-left: 1em;
+    padding-top: .2rem;
+    font-family : sans-serif;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    z-index: 2;
+}
+
+ .main-title h2:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1.2rem;
+    right: -5rem;
+    width: 5rem;
+    border-top: 2px dotted #46454a;
+}
+ .main-title h2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: -90px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 3px solid #36353b;
+    background: #d78205;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    box-sizing: content-box;
+}
+ .main-title .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 95px;
+    height: 40px;
+    border: 1px dotted #46454a;
+    background: rgba(124, 123, 168, .8);
+    border-top-left-radius:0px;
+    border-bottom-left-radius:10px;
+    border-top-right-radius:2px; 
+    border-bottom-right-radius:5px;
+    z-index: -1;
+}
+        .services {
+    padding-top: 1.5em;
+}
+.services .container{
+    background-color:transparent;
+    padding:5%;
+    width: 90%;
+    border-radius:5px;
+}
+.services .service {
+    margin-bottom: 30px;
+    padding: 50px 40px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    color: #f1f1f1;
+    border-top:1px solid rgba(255,255,255,0.5);
+    border-left:1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+
+.services .service:hover{
+    -webkit-box-shadow: 0px 8px 14px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 8px 14px rgba(0,0,0,0.1);
+    -o-box-shadow: 0px 8px 14px rgba(0,0,0,0.1);
+    box-shadow: 0px 8px 14px rgba(0,0,0,0.1);
+    position: relative;
+    transform: translateY(-6px);
+}
+
+.services .service .service-icon {
+    color:#d78205;
+    opacity: .8;
+    font-size: 30px;
+}
+
+.services .service h4 {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.services .service h4:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -71px;
+    width: 55px;
+    border-top: 1px dotted rgba(245, 134, 93, .7);
+}
+
+.services .service h4:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: -17px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 3px solid #36353b;
+    background: #f5865d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-sizing: content-box;
+}
+
+.services .service p {
+    line-height: 1.8;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #9b9a9c;
+}
+
+.pricing__plan {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 60px #0000007a;
+    padding: 30px 15px;
+    overflow: hidden;
+}
+.pricing__plan:before {
+    content: " ";
+    background: #4338c1cc;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 180px;
+    position: absolute;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    width: 1000px;
+    top: -120px;
+    left: -210px;
+}
+.pricing__plan:after {
+    content: " ";
+    background: #4338c1cc;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 180px;
+    position: absolute;
+    -webkit-transform: rotate(106deg);
+    -ms-transform: rotate(106deg);
+    transform: rotate(106deg);
+    width: 1000px;
+    top: -210px;
+    left: -470px;
+    opacity: .5;
+}
+::selection {
+    background: #5b43d6;
+    color: #fff;
+}
+.pricing__plan--1:before {
+    content: " ";
+    background: #80808024;
+    z-index: 5;
+    height: 180px;
+    position: absolute;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    width: 1000px;
+    top: -120px;
+    left: -210px;
+}
+.pricing__plan--1:after {
+    content: " ";
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 180px;
+    position: absolute;
+    -webkit-transform: rotate(106deg);
+    -ms-transform: rotate(106deg);
+    transform: rotate(106deg);
+    width: 1000px;
+    top: -210px;
+    left: -470px;
+    opacity: .5;
+    background: #0000001c;
+}
+.pricing__name {
+    color: #5b43d6;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+    z-index: 6;
+    color: #fff;
+}
+.pricing__features {
+    padding: 0;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+.pricing__plan--1 .pricing__name {
+    color: #777;
+}
+.pricing__feature {
+    display: block;
+    padding: 5px 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.pricing__feature>span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color:#000;
+}
+.pricing__plan--2:before {
+    content: " ";
+    background: #80808024;
+    background: #9600ff;
+    background: #7205f7;
+    z-index: 5;
+    height: 180px;
+    position: absolute;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    width: 1000px;
+    top: -120px;
+    left: -210px;
+}
+.pricing__plan--2:after {
+    content: " ";
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 180px;
+    position: absolute;
+    -webkit-transform: rotate(106deg);
+    -ms-transform: rotate(106deg);
+    transform: rotate(106deg);
+    width: 1000px;
+    top: -210px;
+    left: -470px;
+    opacity: .5;
+    background: #8b32d6;
+    background: #5826a082;
+}
+.pricing__plan--3:before {
+    content: " ";
+    background: #80808024;
+    background: #ffcd00de;
+    background: #ffcd00de;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 180px;
+    position: absolute;
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    width: 1000px;
+    top: -120px;
+    left: -210px;
+    background: #7205f7;
+    background: #ffcd00;
+}
+.pricing__plan--3:after {
+    content: " ";
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 180px;
+    position: absolute;
+    -webkit-transform: rotate(106deg);
+    -ms-transform: rotate(106deg);
+    transform: rotate(106deg);
+    width: 1000px;
+    top: -210px;
+    left: -470px;
+    opacity: .5;
+    background: #5826a082;
+    background: #e4ba34;
+}
+.pricing__footnote {
+    text-align: center;
+    color: #fff;
+    opacity: .4;
+    font-size: 11px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.has-tooltip {
+    position: relative;
+}
+.has-tooltip:after {
+    margin-top: 1px;
+    top: 50%;
+    left: 99%;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    content: " ";
+    display: inline-block;
+    background-image: url(./images/info-circle-solid.svg);
+    width: 25px;
+    height: 25px;
+    background-size: 15px;
+    opacity: .3;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    margin-left: 2px;
+}
+.popover-body {
+    background: #000000a6;
+    color: #fff;
+    font-size: 13px!important;
+}
+.bs-popover-auto[x-placement^=right]>.arrow::after, .bs-popover-right>.arrow::after {
+    border-right-color: #000000a6;
+}
+.popover {
+    margin-left: 2px;
+    background: 0 0;
+}
+[data-toggle=popover] {
+    cursor: pointer;
+}
+h2.pre {
+    color:#d78205;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+    padding-top: 3em;
+    padding-bottom:1em;
+    position: relative;
+}
+
+ h2.pre::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+h2.pre::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #276cd8;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.ownbtn{
+    padding: 12px 30px;
+    border-radius: 30px;
+   color:#fff;
+}
+.ownbtn-1{
+    color:white;
+
+}
+.ownbtn-1:hover,.ownbtn-1:focus{
+    background-color:#000;
+    
+}
+.hire-me {
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    -o-background-size: cover!important;
+    background-size: cover!important;
+}
+.hire-me {
+    background: url('./images/bg-hire.jpeg') no-repeat center center fixed;
+}
+.hire-me .overlay {
+    padding: 70px 0;
+    background: rgba(00, 00, 00, .6);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+.hire-me .overlay h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+.hire-me .overlay span {
+    font-size: 20px;
+}
+.hire-me .overlay .butts-style .bttn {
+    color: #fff;
+}
+.hire-me .overlay .butts-style .bttn:hover {
+    color: #6a67ce;
+}
+.hire-me .overlay .butts-style .bttn:after, .hire-me .overlay .butts-style .bttn:before {
+    color: #161a42;
+}
+.hire-me .overlay .butts-style .bttn:after {
+    background-color: #fff;
+}
+.hire-me .overlay .butts-style .bttn:hover:after {
+    background-color: #fff;
+}
+.butts-style {
+    margin-top: 40px;
+}
+.butts-style .bttn {
+    color: #161a42;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 16px 25px 0 48px;
+    border-radius: 0;
+    position: relative;
+    transition: all .2s ease 0s;
+    z-index: 1;
+    font-size: 14px;
+}
+.butts-style .bttn:hover {
+    color: #fff;
+    border-color: transparent;
+}
+.butts-style .bttn:after, .butts-style .bttn:before {
+    color: white;
+    content: "→";
+    font-weight: 900;
+    font-family: LineIcons!important;
+    line-height: 48px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all .45s cubic-bezier(.65, 0, .076, 1);
+    text-align: center;
+}
+.butts-style .bttn:after {
+    background-color: #161a42;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: -1;
+    transition: all .45s cubic-bezier(.65, 0, .076, 1);
+}
+.butts-style .bttn:hover:after {
+    background-color:#161a42;
+    width: 100%;
+    }
+     
+    .footer {
+            background-color: #0b0d21;;
+            padding: 30px 0;
+            margin-top: 60px;
+            color: #d78205;
+            transition:background-color 0.55s ease-in-out 0s;
+            text-align: center;
+        }
+
+        .footer .logo {
+            display: inline-block;
+            position: relative;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            
+            color: white;
+            text-decoration: none;
+            transition:all 0.3s ease-in-out 0s;
+            text-align: center;
+        }
+        .footer .logo:hover{
+            color:#d78205;
+            transition:all 0.3s ease-in-out 0s;
+            cursor: pointer;
+        }
+       
+
+        .footer .footer-social-icons {
+            margin-bottom: 0;
+            padding: .5rem 0;
+            text-align: center;
+        }
+
+        .footer .footer-social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer .footer-social-icons li a {
+            display: inline-block;
+            font-size: 1.2rem;
+            width: 1.8rem;
+            height: 2rem;
+            line-height: 2rem;
+            text-align: center;
+            color: white;
+            transition:all 0.3s ease-in-out 0s;
+        }
+
+        .footer .footer-social-icons li a:hover {
+            color:#d78205;
+            transition:all 0.3s ease-in-out 0s;
+            cursor: pointer;
+        }
+
+        .footer .copyright p {
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 1.8;
+            margin: 0;
+            color:lightgray;
+        }
+
+        .footer .copyright p a {
+            color:black;
+        }
+
+        @media (max-width: 991.98px) {
+
+.nav-item1:focus,.nav-item1:hover{
+border-left: 1px solid white;
+border-bottom:none;  
+border-bottom-left-radius: .4em;
+border-bottom-right-radius: none;
+border-top-left-radius: .4em;  
+}
+.navbar-nav.active:hover,.navbar-nav .active:focus{
+   border-left: none;
+}
+
+}
+@media (max-width:350px){
+.navbar-brand{
+margin-left:-2em;
+}
+}
+
+        @media(min-width:1200px) {
+    .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+h2 {
+    font-size: 34px;
+}
+.h2.pre, h2.pre {
+    color:#d78205;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+}
+
+.color-white a {
+    color: #fff;
+    text-decoration: underline;
+}
+}
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+}
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.pricing__plan {
+    margin-bottom: 50px;
+}
+.hire-me .overlay h2 {
+    font-size: 25px;
+}
+.hire-me .overlay span {
+    font-size: 17px;
+}
+}
+/* Small Devices */
+@media (max-width: 767.98px) {
+
+       h2.pre {
+    color:#d78205;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    padding-top: 3em;
+    padding-bottom: 0;
+}
+       .main-title h2 {
+    position: relative;
+    display: inline-block;
+    color:  #d78205;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0;
+    padding-left: .7em;
+    padding-top: .7rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    z-index: 2;
+    
+}
+.main-title h2::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1.2rem;
+    right: -2rem;
+    width: 2rem;
+    border-top: 2px dotted #46454a;
+}
+.main-title h2::after {
+
+content: '';
+display: block;
+position: absolute;
+top: 15px;
+right: -44px;
+height: 4px;
+width: 4px;
+border-radius: 50%;
+border: 3px solid #36353b;
+background:  #d78205;
+box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+box-sizing: content-box;
+
+}
+ .main-title .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 95px;
+    height: 40px;
+    border: 1px dotted #46454a;
+    background: #7c7ba8;
+    border-right: none;
+    z-index: -1;
+}
+       .container {
+        max-width: 540px;
+    }
+    .services {
+        padding-top: 1.5em;
+    }
+       .hire-me .overlay h2 {
+    font-size: 20px;
+}
+.hire-me .overlay span {
+    font-size: 15px;
+}
+.butts-style .bttn {
+    margin-bottom: 20px;
+}
+    
+      }
+      @media (max-width: 575.98px) {
+    
+    .main-title {
+        margin-bottom: 50px;
+        padding-top: 1.5em;
+    }
+    
+    .main-title h2 {
+        font-size: 18px;
+        padding-left: 22px;
+    }
+    
+    .main-title h2:before {
+        right: -52px;
+        width: 40px;
+    }
+    
+    .main-title h2:after {
+        right: -62px;
+    }
+    
+    .main-title span {
+        right: -95px;
+    }
+}
+.services .service h4 {
+        font-size: 14px;
+    }
+    
+    .services .service h4:before,
+    .services .service h4:after {
+        display: none;
+    }
+
+      @media (max-width: 460px){
+        .main-title h2{
+        position: relative;
+    display: inline-block;
+    color:  #d78205;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 1;
+    margin: 0;
+    padding-left: 1em;
+    padding-top: 1em;
+    
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    z-index: 2;
+}
+.main-title h2::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1.2rem;
+    right: -2rem;
+    width: 2rem;
+    border-top: 2px dotted #46454a;
+}
+.main-title h2::after {
+
+content: '';
+display: block;
+position: absolute;
+top: 15px;
+right: -44px;
+height: 4px;
+width: 4px;
+border-radius: 50%;
+border: 3px solid #36353b;
+background: #d78205;
+box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+box-sizing: content-box;
+
+}
+ .main-title .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 95px;
+    height: 40px;
+    border: 1px dotted #46454a;
+    background: #7c7ba8;
+    border-right: none;
+    z-index: -1;
+}
+      }
+
+    </style>    
+</head>
+<body>
+    <div class="btn btn-warning top-arrow" id="top-btn" style="background-image: linear-gradient(120deg,#d78205 20%, #ccc 100%);;border-radius: 50%;">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <section id="section1">
+        <nav class="navbar navbar-expand-lg navbar-dark wow bounce "data-wow-duration="1s" data-wow-delay=".2s"style="background-color:rgba(11, 13, 33, 1);">
+            <a class="navbar-brand mr-auto wow fadeInLeft"data-wow-duration="2s" data-wow-delay=".3s" href="./index.html"><img class="brand" src="./images/logooooo-removebg-preview.png" alt="">Sravan.</a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="bar "></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+                <li class="nav-item nav-item1">
+                  <a class="nav-link" href="./index.html">Home </a>
+                </li>
+                <li class="nav-item nav-item1">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item nav-item1">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item nav-item1 active"style="color:white;">
+                    <a class="nav-link" href="./services.html">Services<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item nav-item1">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+              </ul>
+            </div>
+        </nav>      
+    </section>
+      
+
+      <!-- ========== Start Services ========== -->
+      
+      <section class="services"data-aos="fade-up"id="services">
+        <div class="container">
+             <div class="main-title">
+                <h2 >OFFERINGS TO MY CLIENTS
+                    <span class="holder"></span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6"data-aos="fade-right">
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-pencil-alt fa-lg"></i>
+                        </div>
+                        <h4>Creative Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6"data-aos="fade-up">
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fa fa-flag fa-lg"></i>
+                        </div>
+                        <h4>Branding</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6"data-aos="fade-left">
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fa fa-laptop fa-lg"></i>
+                        </div>
+                        <h4>User Interface</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6"data-aos="fade-right">
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fa fa-briefcase fa-lg"></i>
+                        </div>
+                        <h4>User Experience</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6"data-aos="fade-up">
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fa fa-code fa-lg"></i>
+                        </div>
+                        <h4>Clean Code</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6"data-aos="fade-left">
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="far fa-life-ring fa-lg"></i>
+                        </div>
+                        <h4>Fast Support</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== End Services ========== -->
+    <section id="pricing" class=" section pt-4" data-spy="scroll" data-target="#menu">
+        <h2 class="pre text-center p-3 ">Pricing per build</h2>
+        <div class="container pt-4">
+            <div class="pricing">
+                <div class="pricing__inner">
+                    <div class="row text-center mb-4">
+                        <div class="col-md-8 mx-auto col-lg-4">
+                            <div class="pricing__plan pricing__plan--1"data-tilt data-tilt-scale="1.1" data-aos="fade-up" data-aos-duration="750" data-aos-delay="0" data-aos-offset="0">
+                                <h3 class="pricing__name">Basic</h3>
+                                <ul class="pricing__features">
+                                    <li class="pricing__feature">Website Audit</li>
+                                    <li class="pricing__feature">Design</li>
+                                    <li class="pricing__feature">Development</li>
+                                </ul>
+                                <div>
+                                    <a href="/contact.html" data-package="Basic" class="btn btn-sm mt-3 btn-secondary ownbtn ownbtn-1">Request quote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 mx-auto col-lg-4">
+                            <div class="pricing__plan pricing__plan--2" data-tilt data-tilt-scale="1.1"data-aos="fade-up" data-aos-duration="750" data-aos-delay="250">
+                                <h3 class="pricing__name">Standard</h3>
+                                <ul class="pricing__features">
+                                    <li class="pricing__feature">Website Audit</li>
+                                    <li class="pricing__feature">Design</li>
+                                    <li class="pricing__feature">Development</li>
+                                    <li class="pricing__feature">Backups</li>
+                                    <li class="pricing__feature">Analytics</li>
+                                    <li class="pricing__feature">Live Chat</li>
+                                    <li class="pricing__feature">Search Engine Optimization</li>
+                                    <li class="pricing__feature">
+                                        <span class="has-tooltip" data-tippy data-tippy-content="Includes the integration of the WordPress content management system. Easily update your content without knowing how to code.">Content Management</span>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <a href="./contact.html" data-package="Standard" class="btn btn-sm mt-3 btn-primary ownbtn">Request quote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 mx-auto col-lg-4">
+                            <div class="pricing__plan pricing__plan--3" data-tilt data-tilt-scale="1.1"data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">
+                                <h3 class="pricing__name">Premium</h3>
+                                <ul class="pricing__features">
+                                    <li class="pricing__feature">Website Audit</li>
+                                    <li class="pricing__feature">Design</li>
+                                    <li class="pricing__feature">Development</li>
+                                    <li class="pricing__feature">Backups</li>
+                                    <li class="pricing__feature">Analytics</li>
+                                    <li class="pricing__feature">Live Chat</li>
+                                    <li class="pricing__feature">Search Engine Optimization</li>
+                                    <li class="pricing__feature">
+                                        <span class="has-tooltip" data-tippy data-tippy-content="Includes the integration of the WordPress content management system. Easily update your content without knowing how to code.">Content Management</span>
+                                    </li>
+                                
+                                    <li class="pricing__feature">Maintenance Agreement</li>
+                                    <li class="pricing__feature">eCommerce</li>
+                                    <li class="pricing__feature">
+                                        <span class="has-tooltip" data-tippy data-tippy-content="Includes configuration of email hosting service such as G Suite (Gmail) and Outlook.">Email Setup</span>
+                                    </li>
+                                    <li class="pricing__feature">
+                                        <span class="has-tooltip" data-tippy data-tippy-content="Hosting plan will be calculating based on traffic.">Hosting</span>
+                                    </li>
+                                </ul>
+                                <a href="./contact.html" data-package="Premium" class="btn btn-warning btn-sm my-2 text-white ownbtn" id="request-quote">Request quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+     <!-- Start Hire Me-->
+     <section class="hire-me parallax" id="hire-me">
+        <div class="overlay">
+          <div class="container">
+            <h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">Do you have an interesting project?</h2><span class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">I am available for freelance projects.</span>
+            <div class="butts-style " data-aos="flip-up"><a class="bttn bttn-lg" href="./contact.html">Get Quotes</a></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Hire Me-->
+
+      <footer class="footer text-center" id="foot">
+        <div class="container">
+           <a class="logo" href="./index.html">Sravan.</a>
+            <ul class="footer-social-icons list-unstyled">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>All Rights Reserved &copy; 2021</p>
+            </div>
+        </div>
+    </footer> 
+    <script>
+        window.onscroll=function(){
+          
+           if (window.scrollY>500){
+               document.getElementById("top-btn").classList.add("top-disp");
+              }
+           if (window.scrollY<500){
+               document.getElementById("top-btn").classList.remove("top-disp");
+             }
+          
+       };
+       document.getElementById("top-btn").onclick=function(){
+           window.scrollTo(0,0);
+       };
+     
+      </script>
+              
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/wow.js"></script>
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".service"),{
+            max: 25,
+            speed: 400
+        });
+        </script>
+    <script>
+    
+    new WOW().init();
+    
+        tippy('.has-tooltip');
+        AOS.init({duration: 1000,
+  easing: 'ease-in-out'});
+      </script>
+</body>
+</html>    

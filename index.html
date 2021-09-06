@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fonts/css/all.css">
+    <link rel="stylesheet" href="./fonts/font-awesome.css">
+    <link rel="stylesheet" href="./css/animate.css">
+   <link rel="stylesheet" href="./fonts/Segoe UI.ttf">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Segoe UI','Teko','poppins';
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin:0px;
+            padding:0px;
+            background-color: rgba(22, 26, 66, 1);
+        }
+        a{
+            text-decoration:none;
+        }
+        
+        .navbar-nav .active a{
+           
+           background-image: linear-gradient(120deg,#d78205 20%, #ccc 100%);
+            border-radius:.4em;
+                    }
+            .nav-item1:focus,.nav-item1:hover{ 
+            border-bottom: 1px solid white;
+            border-bottom-left-radius: .4em;
+            border-bottom-right-radius: .4em;
+
+           }
+        .navbar-brand{
+            margin-left: -1em;
+        }
+        .brand{
+            width:2.7em;
+            height:2.5em;
+            position:relative;
+            left: .8em;
+            top:-.1em;
+        }
+        .bar {
+        display: block;
+        width: 1.5em;
+        height: .1em;
+        border-radius: 5px;
+        background-color: black;
+        margin: 6px 0px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin: .5em;
+}
+        .navbar-toggler{
+            border:none;
+            background: linear-gradient(120deg,#d78205 20%, #ccc 100%);
+        }
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.img-fluid{
+    max-width: 70%;
+}
+#btnhireme{
+    background-color:#343a40;
+    margin: 1em;
+    padding: .5em 1em .5em 1em;
+   
+}
+#btnhireme:focus,#btnhireme:hover,#btnhireme:active{
+  border: 1px solid #d78205;
+}
+#abtnhireme{
+    color: #ccc;
+    text-decoration: none;
+    padding: .5em 1em .5em 1em;
+}
+#abtnhireme:hover,#abtnhireme:focus,#abtnhireme:active{
+    color: white;
+    outline: none;
+}
+.herotext{
+    position: relative;
+    top:-16.5em;
+   
+}.herotext h1 {
+    font-family: 'Segoe UI';
+    font-size: 5em;
+    font-weight: 200;
+    margin-bottom: 20px;
+    display: block; 
+    }
+    .herotext h1 strong {
+      font-weight: 800; }
+      .herodata{
+          position: relative;
+          top:-10em;
+      }
+      @media(min-width:1200px){
+          .img-fluid{
+              max-width: 70%;
+          }
+          .herotext{
+            top:-17.5em;
+          }
+      }
+@media(max-width: 1199px){
+    .herotext{
+        top:-15em;
+        left:0px;
+    }
+}
+@media(max-width:991.98px){
+    .img-fluid{
+        max-width: 90%;
+    }
+    .herotext{
+        left:0px;
+        top:-12em;
+    }
+}
+@media(min-width:767.98px){
+    .resume{
+        padding-bottom: 2em;
+    }
+}
+@media(max-width:767.98px){
+    .resume .container{
+        width:90%;
+    }
+    
+    
+    .resume .timeline {
+        margin-top: 40px;
+    }
+    
+    .resume .timeline:before {
+        top: -36px;
+    }
+    
+    .resume .timeline ul li {
+        margin-bottom: 48px;
+    }
+    
+    .resume .timeline ul li:before {
+        top: -37px;
+    }
+    
+    .resume .timeline ul li:nth-child(even) .timeline-content,
+    .resume .timeline ul li:nth-child(odd) .timeline-content {
+        width: 100%;
+        float: none;
+    }
+    
+    .resume .timeline ul li:nth-child(even) .timeline-content:before,
+    .resume .timeline ul li:nth-child(odd) .timeline-content:before {
+        top: -19px;
+        border-color: transparent transparent #d78205 transparent;
+    }
+    
+    .resume .timeline ul li:nth-child(even) .timeline-content:before {
+        left: 50%;
+        margin-left: -12px;
+    }
+    
+    .resume .timeline ul li:nth-child(odd) .timeline-content:before {
+        right: 50%;
+        margin-right: -12px;
+    }
+    
+   .img-fluid{
+       max-width: 100%;
+   }
+    .herotext{
+        left:0px;
+        top:-10em;
+    }
+
+    .hertext h1{
+        font-size: 3em;
+    }
+    .herodata{
+        top:-7.5em;
+    }
+}
+@media(max-width:575.98px){
+    
+    .resume .timeline ul li .timeline-content span {
+        font-size: 15px;
+    }
+    
+    .resume .timeline ul li .timeline-content h4 {
+        font-size: 17px;
+    }
+   
+}
+@media (max-width:500px){
+    .herotext h1{
+        font-size: 2.8em;;
+    }
+    .img-fluid{
+       max-width: 100%;
+   }
+    .herotext{
+        left:0px;
+    top:-6em;
+    }
+    .herodata{
+        top:-3em;
+    }
+
+
+}
+@media(max-width:403px){
+    .herotext{
+        left:0px;
+        top:-5em;
+    }
+    .herotext h1{
+        font-size: 2.8em;
+    }
+}
+
+
+
+       .statistics {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+ .statistics .tilter {
+    display: block;
+    position: relative;
+    color: #fff;
+    flex: none;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 180px;
+    height: 180px;
+}
+ .statistics .tilter * {
+    pointer-events: none;
+}
+ .statistics .tilter:focus,  .statistics .tilter:hover {
+    color: #fff;
+    outline: 0;
+}
+ .statistics .tilter__figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    color:#276cd8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+ .statistics .tilter__figure>* {
+    transform: translateZ(0);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .statistics .tilter__deco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 9, 128, .035), 0 7px 18px rgba(0, 9, 128, .05);
+    -moz-box-shadow: 0 5px 10px rgba(0, 9, 128, .035), 0 7px 18px rgba(0, 9, 128, .05);
+    -ms-box-shadow: 0 5px 10px rgba(0, 9, 128, .035), 0 7px 18px rgba(0, 9, 128, .05);
+    -o-box-shadow: 0 5px 10px rgba(0, 9, 128, .035), 0 7px 18px rgba(0, 9, 128, .05);
+    box-shadow: 0 5px 10px rgba(0, 9, 128, .035), 0 7px 18px rgba(0, 9, 128, .05);
+}
+ .statistics .tilter__title {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 14px;
+    position: relative;
+}
+ .statistics .tilter__caption sup {
+    position: absolute;
+    font-size: 18px;
+    right: 46px;
+    top: 34px;
+}
+ .statistics .tilter__description {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .4px;
+}
+ .statistics span.top-title {
+    font-weight: 700;
+    font-size: 13px;
+    background:#276cd8;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 7px 24px;
+    border-radius: 50px;
+    position: absolute;
+    top: -65px;
+    letter-spacing: .4px;
+}
+.inline-image-right .container{
+    padding:1em;
+}
+.inline-image-right img {
+  
+  border-radius: 5px;
+}
+.inline-image-right h1 {
+    font-size:2em;
+    font-family: teko;
+}
+.inline-image-right h4 {
+ font-size:1em;
+ margin: 1em;
+  font-family: 'Brygada 1918', serif;
+}
+.inline-image-right p{
+    font-size:1em;
+}
+.inline-image-right .butts-style .bttn {
+    color: black;
+}
+.inline-image-right.butts-style .bttn:hover {
+    color: #6a67ce;
+}
+.inline-image-right.butts-style .bttn:after, .hire-me .overlay .butts-style .bttn:before {
+    color: #6a67ce;
+}
+.inline-image-right.butts-style .bttn:after {
+    background-color: #fff;
+}
+.inline-image-right.butts-style .bttn:hover:after {
+    background-color: #fff;
+}
+.butts-style {
+    margin-top: 40px;
+}
+.butts-style .bttn {
+    color: #6a67ce;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 16px 25px 0 48px;
+    border-radius: 0;
+    position: relative;
+    transition: all .2s ease 0s;
+    z-index: 1;
+    font-size: 14px;
+}
+.butts-style .bttn:hover {
+    color: #fff;
+    border-color: transparent;
+}
+.butts-style .bttn:after, .butts-style .bttn:before {
+    color: white;
+    content: "→";
+    font-weight: 900;
+    font-family: LineIcons!important;
+    line-height: 48px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all .45s cubic-bezier(.65, 0, .076, 1);
+    text-align: center;
+}
+.butts-style .bttn:after {
+    background-color: #161a42;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: -1;
+    transition: all .45s cubic-bezier(.65, 0, .076, 1);
+}
+.butts-style .bttn:hover:after {
+    background-color:#161a42;
+    width: 100%;
+    }
+    ::selection{
+  color: #fff;
+  background:#276cd8;
+}
+.skill-bars{
+    padding: 2em 2em 2em 1em;
+   background: #fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin:2em auto;
+  color:#161a42;
+}
+.skill-bars h1{
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #d78205;
+}
+
+.skill-bars h1::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.skill-bars h1::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #276cd8;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.professional-skills h3,.personal-skills h3{
+  text-align:center;
+  font-size: 1.5em;
+}
+.skill-bars .bar1{
+  margin: 20px 0;
+}
+.skill-bars .bar1:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar1 .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar1 .info span{
+    font-weight: 350;
+font-size: 1em;
+  opacity: 0;
+  animation: showText 5.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar1 .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar1 .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background:#d78205;
+  animation: animate 4.5s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar1 .progress-line.communication span{
+  width: 90%;
+}
+.bar1 .progress-line.teamwork span{
+  width: 95%;
+}
+.bar1 .progress-line.adaptability span{
+  width: 92%;
+}
+.bar1 .progress-line.integrity span{
+  width: 93%;
+}
+.bar1 .progress-line.honesty span{
+  width: 100%;
+}
+.bar1 .progress-line.support span{
+  width: 96%;
+}
+.bar1 .progress-line.html span{
+  width: 90%;
+}
+.bar1 .progress-line.css span{
+  width: 80%;
+}
+.bar1 .progress-line.jquery span{
+  width: 85%;
+}
+.bar1 .progress-line.python span{
+  width: 85%;
+}
+.bar1 .progress-line.mysql span{
+  width: 75%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 4.5s 2.5s linear forwards;
+}@media(max-width:767.98px){
+    .bar1 .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background:#d78205;
+  animation: animate 6.5s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+    .progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 6.5s 2.5s linear forwards;
+}
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.communication span::after{
+  content: "90%";
+}
+.progress-line.teamwork span::after{
+  content: "95%";
+}
+.progress-line.adaptability span::after{
+  content: "92%";
+}
+.progress-line.integrity span::after{
+  content: "93%";
+}
+.progress-line.honesty span::after{
+  content: "100%";
+}
+.progress-line.support span::after{
+  content: "96%";
+}
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.css span::after{
+  content: "80%";
+}
+.progress-line.jquery span::after{
+  content: "85%";
+}
+.progress-line.python span::after{
+  content: "85%";
+}
+.progress-line.mysql span::after{
+  content: "75%";
+}
+
+
+
+
+
+        .top-arrow{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display:none;
+            transition:all 2.35s ease-in-out 0s;
+        }
+        .top-disp{
+            display: block;
+            transition:all 2.35s ease-in-out 0s;
+            z-index: 55;
+        }
+   
+.resume .main-title h2 {
+       text-align: center;
+    font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  position: relative;
+  color: #d78205;
+
+}
+@media(min-width:767.98px){
+    .resume .main-title h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #d78205;
+    margin-bottom: 1em;
+}
+}
+.resume .main-title h2::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #276cd8;
+    bottom: 1px;
+    left: calc(50% - 20px);
+}
+.resume .main-title h2::before {
+  content: '';
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background:#ccc;
+  bottom: -1.234em;
+  left: calc(50% - 60px);
+}
+
+.resume {
+    padding-top: 2.5em;
+}
+
+.resume .timeline {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.resume .timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 5px;
+    height: 88%;
+    background: #36353b;
+    display: block;
+}
+
+.resume .timeline ul {
+    padding: 0;
+    margin-bottom: 0;
+	list-style: none;
+}
+
+.resume .timeline ul li {
+    position: relative;
+}
+
+.resume .timeline ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    top: 9px;
+    left: 50%;
+    margin-left: -9px;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    border: 5px solid #276cd8;
+    background:#d78205;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-sizing: content-box;
+}
+
+.resume .timeline ul li:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.resume .timeline ul li .timeline-content {
+    position: relative;
+    background: #36353b;
+    width: 45%;
+    text-align: center;
+}
+
+.resume .timeline ul li:nth-child(odd) .timeline-content {
+    float: left;
+    clear: both;
+}
+
+.resume .timeline ul li:nth-child(even) .timeline-content {
+    float: right;
+    clear: both;
+}
+
+.resume .timeline ul li:nth-child(odd) .timeline-content:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 999;
+    top: 9px;
+    right: -22px;
+    border-width: 10px 12px;
+    border-style: solid;
+    border-color: transparent transparent transparent #d78205;
+}
+
+.resume .timeline ul li:nth-child(even) .timeline-content:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 999;
+    top: 9px;
+    left: -22px;
+    border-width: 10px 12px;
+    border-style: solid;
+    border-color: transparent #d78205 transparent transparent;
+}
+
+.resume .timeline ul li .timeline-content span {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    background: #d78205;
+}
+
+.resume .timeline ul li .timeline-content h4 {
+    font-size: 18px;
+    margin: 0 15px 15px;
+    padding: 15px 0;
+    text-transform: capitalize;
+    color: #d78205;
+    opacity: .8;
+    border-bottom: 1px solid #434247;
+}
+
+.resume .timeline ul li .timeline-content p {
+    color: #9b9a9c;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    text-align: left;
+    padding: 0 20px 15px;
+    margin: 0;
+}
+        .footer {
+            background-color: #0b0d21;;
+            padding: 30px 0;
+            margin-top: 60px;
+            color: #d78205;
+            transition:background-color 0.55s ease-in-out 0s;
+            text-align: center;
+        }
+
+        .footer .logo {
+            display: inline-block;
+            position: relative;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 1px;
+              color: white;
+            text-decoration: none;
+            transition:all 0.3s ease-in-out 0s;
+            text-align: center;
+        }
+        .footer .logo:hover{
+            color:#d78205;
+            transition:all 0.3s ease-in-out 0s;
+            cursor: pointer;
+        }
+       
+
+        .footer .footer-social-icons {
+            margin-bottom: 0;
+            padding: .5rem 0;
+            text-align: center;
+        }
+
+        .footer .footer-social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer .footer-social-icons li a {
+            display: inline-block;
+            font-size: 1.2rem;
+            width: 1.8rem;
+            height: 2rem;
+            line-height: 2rem;
+            text-align: center;
+            color: white;
+            transition:all 0.3s ease-in-out 0s;
+        }
+
+        .footer .footer-social-icons li a:hover {
+            color:#d78205;
+            transition:all 0.3s ease-in-out 0s;
+            cursor: pointer;
+        }
+
+        .footer .copyright p {
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 1.8;
+            margin: 0;
+            color:lightgray;
+        }
+
+        .footer .copyright p a {
+            color:black;
+        }
+
+
+        @media (max-width: 991.98px) {
+
+.nav-item1:focus,.nav-item1:hover{
+border-left: 1px solid white;
+border-bottom:none;  
+border-bottom-left-radius: .4em;
+border-bottom-right-radius: none;
+border-top-left-radius: .4em;  
+}
+.navbar-nav.active:hover,.navbar-nav .active:focus{
+   border-left: none;
+}
+
+}
+@media(max-width:765px){
+    .statistics main {
+    margin-bottom: 129px;
+}
+ .statistics .col-md-4:last-child main {
+    margin-bottom: 0;
+}
+.statistics .content {
+    margin-bottom: 130px;
+}
+.statistics .row .col-md-4:last-child .content {
+    margin-bottom: 0;
+}
+}
+@media (max-width:350px){
+.navbar-brand{
+margin-left:-2em;
+}
+}
+@media (max-width:345px){
+   
+.inline-image-right h4 {
+ font-size:.9em;
+ margin: 1em;
+  font-family: 'Brygada 1918', serif;
+}
+    }
+
+@media (max-width:328px){
+    .inline-image-right h1 {
+    font-size:1.5em;
+    font-family: teko;
+}
+.inline-image-right h4 {
+ font-size:.8em;
+ margin: 1em;
+  font-family: 'Brygada 1918', serif;
+}
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="btn btn-warning top-arrow" id="top-btn" style="background-image: linear-gradient(120deg,#d78205 20%, #ccc 100%);;border-radius: 50%;">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <section>
+        <section id="section1">
+            <nav class="navbar navbar-expand-lg navbar-dark wow bounce "data-wow-duration="1s" data-wow-delay=".2s"style="background-color:rgba(11, 13, 33, 1);">
+                <a class="navbar-brand mr-auto wow fadeInLeft"data-wow-duration="2s" data-wow-delay=".3s" href="./index.html"><img class="brand" src="./images/logooooo-removebg-preview.png" alt="">Sravan.</a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="bar "></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                  
+                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+                    <li class="nav-item active"style="color:white;">
+                      <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nav-item1">
+                      <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item nav-item1">
+                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item nav-item1">
+                        <a class="nav-link" href="./services.html">Services</a>
+                      </li>
+                      <li class="nav-item nav-item1">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>    
+            </div>
+        </section>
+        <section class="bg-dark">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12 text-center">
+                    <img class="img-fluid pt-4 wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s"src="./images/DejanHome.png" alt="" srcset="">
+                    
+                   <div class="herotext"> <h1 class="text-white wow bounce "data-wow-duration="1s" data-wow-delay=".2s">Hello, I'm <strong class="d-block">Sravan</strong></h1>
+                       <strong class="d-block text-white text-uppercase letter-spacing">I'm a <span class="typing"> </span></strong>
+                    </div>
+                    <p class="text-white herodata">I’m a Front End Developer. I have a Passion for Creating Clean, Beautiful, Interactive, Minimalistic, Responsive and User Friendly UI, Developed by Modular, Scalable and Functional Code. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Start Statistics-->
+ <section>
+ <div class="container">
+ <div class="statistics">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+          <div class="content content--c1"><a class="tilter tilter--1" href="#">
+              <div class="tilter__figure">
+                <div class="tilter__deco tilter__deco--shine">
+                  <div></div>
+                </div>
+                <div class="tilter__caption"><span class="top-title">Experience</span>
+                  <h3 class="tilter__title"><span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="5" data-speed="4" class="purecounter"></span></h3>
+                  <p class="tilter__description">Years</p>
+                </div>
+              </div></a></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+          <div class="content content--c1"><a class="tilter tilter--1" href="#">
+              <div class="tilter__figure">
+                <div class="tilter__deco tilter__deco--shine">
+                  <div></div>
+                </div>
+                <div class="tilter__caption"><span class="top-title">WORK</span>
+                  <h3 class="tilter__title"><span data-purecounter-start="0" data-purecounter-end="356" data-purecounter-duration="1" class="purecounter"></span></h3>
+                  <p class="tilter__description">PROJECTS DONE</p>
+                </div>
+              </div></a></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+          <div class="content content--c1"><a class="tilter tilter--1" href="#">
+              <div class="tilter__figure">
+                <div class="tilter__deco tilter__deco--shine">
+                  <div></div>
+                </div>
+                <div class="tilter__caption"><span class="top-title">Rate</span>
+                  <h3 class="tilter__title"><span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span></h3><sup>$</sup>
+                  <p class="tilter__description">per hour</p>
+                </div>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="text-align: center;">
+<button class="btn btn-lg "id="btnhireme"><a href="./contact.html"id="abtnhireme">Hire Me</a></button>
+</div>
+</section>
+  <!-- End Statistics-->
+        <!-- ========== Start Skills ========== -->
+        
+        <div class="skill-bars ">
+            <div class="container">
+              <h1 class="text-center">My Skills</h1>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="professional-skills wow fadeInUp"data-wow-duration="1s" data-wow-delay=".6s">
+                    <h3>
+                        <i class="fa fa-tasks" style="color: black;"></i>
+                        Professional Skills
+                    </h3>
+            <div class="bar1">
+              <div class="info">
+                <span>HTML5 & CSS3</span>
+              </div>
+              <div class="progress-line html">
+                <span id="animateskill"></span>
+              </div>
+            </div>
+            <div class="bar1">
+                <div class="info">
+                  <span>Bootstrap</span>
+                </div>
+                <div class="progress-line css">
+                    <span id="animateskill"></span>
+                </div>
+              </div>
+            <div class="bar1">
+              <div class="info">
+                <span>JavaScript</span>
+              </div>
+              <div class="progress-line css">
+                <span id="animateskill"></span>
+              </div>
+            </div>
+            <div class="bar1">
+              <div class="info">
+                <span>jQuery</span>
+              </div>
+              <div class="progress-line jquery">
+                <span id="animateskill"></span>
+              </div>
+            </div>
+            <div class="bar1">
+              <div class="info">
+                <span>Python</span>
+              </div>
+              <div class="progress-line python">
+                <span id="animateskill"></span>
+              </div>
+            </div>
+            <div class="bar1">
+              <div class="info">
+                <span>Java</span>
+              </div>
+              <div class="progress-line mysql">
+                <span id="animateskill"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="personal-skills wow fadeInDown"data-wow-duration="1s" data-wow-delay=".6s">
+            <h3>
+                <i class="fas fa-vcard"style="color: black;"></i>
+                Personal Skills
+            </h3>
+        <div class="bar1">
+          <div class="info">
+            <span>Communication</span>
+          </div>
+          <div class="progress-line communication">
+            <span id="animateskill"></span>
+          </div>
+        </div>
+        <div class="bar1">
+          <div class="info">
+            <span>Teamwork</span>
+          </div>
+          <div class="progress-line teamwork">
+            <span id="animateskill"></span>
+          </div>
+        </div>
+        <div class="bar1">
+          <div class="info">
+            <span>Adaptability</span>
+          </div>
+          <div class="progress-line adaptability">
+            <span id="animateskill"></span>
+          </div>
+        </div>
+        <div class="bar1">
+            <div class="info">
+              <span>Integrity</span>
+            </div>
+            <div class="progress-line integrity">
+                <span id="animateskill"></span>
+            </div>
+          </div>
+        <div class="bar1">
+            <div class="info">
+              <span>Honesty</span>
+            </div>
+            <div class="progress-line honesty">
+                <span id="animateskill"></span>
+            </div>
+          </div>
+          <div class="bar1">
+            <div class="info">
+              <span>Support</span>
+            </div>
+            <div class="progress-line support">
+                <span id="animateskill"></span>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+          </div>
+          </div>
+        
+        <!-- ========== End Skills ========== -->
+           
+        <section class="resume" id="resume">
+            <div class="container">
+                <div class="main-title">
+                    <h2>My Resume
+                        <span class="holder"></span>
+                       
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="timeline">
+                            <ul>
+                                <li>
+                                    <div class="timeline-content wow fadeInLeft" data-wow-duration=".8s" data-wow-offset="100"data-tilt data-tilt-axis="x">
+                                        <span class="date">2017 - 2019</span>
+                                        <h4>Freelancer</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-content wow fadeInRight" data-wow-duration=".8s" data-wow-offset="100"data-tilt data-tilt-axis="x">
+                                        <span class="date">2015 - 2017</span>
+                                        <h4>Company Name</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-content wow fadeInLeft" data-wow-duration=".8s" data-wow-offset="100"data-tilt data-tilt-axis="x">
+                                        <span class="date">2014 - 2015</span>
+                                        <h4>Front-End Developer</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-content wow fadeInRight" data-wow-duration=".8s" data-wow-offset="100"data-tilt data-tilt-axis="x">
+                                        <span class="date">2013 - 2014</span>
+                                        <h4>Web Developer</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-content wow fadeInLeft" data-wow-duration=".8s" data-wow-offset="100"data-tilt data-tilt-axis="x">
+                                        <span class="date">2011 - 2013</span>
+                                        <h4>SV University</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== End Resume ========== -->
+        <section class="inline-image-right"style="background-color: #fff;"data-aos="zoom-in-down">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-6">
+                        <img alt="Product Image" class="img-fluid" src="./images/web-designer.jpg">
+                    </div>
+                    <div class="col-md-6 text-center p-4">
+                        <h1>Do you Interested to know More About me???</h1>
+                        <h4><i class="fas fa-smile-beam" style="color:#276cd8"></i>Then Click here<i class="far fa-hand-point-down"style="color:#d78205;"></i></h4>
+                        <div class="butts-style wow flipInX" data-wow-duration="1s" data-wow-delay=".6s"><a class="bttn bttn-lg " style="text-decoration: none;outline: none;"href="./about.html">More About me..</a></div>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+    <footer class="footer text-center" id="foot">
+        <div class="container">
+           <a class="logo" href="./index.html">Sravan.</a>
+            <ul class="footer-social-icons list-unstyled">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>All Rights Reserved &copy; 2021</p>
+            </div>
+        </div>
+    </footer>
+    
+     <script>
+         
+         window.onscroll=function(){
+           
+           if (window.scrollY>500){
+               document.getElementById("top-btn").classList.add("top-disp");
+
+           }
+           if (window.scrollY<500){
+               document.getElementById("top-btn").classList.remove("top-disp");
+           }
+          
+        };
+        document.getElementById("top-btn").onclick=function(){
+            window.scrollTo(0,0);
+        };
+     </script>
+    
+   <script src="./js/JQuery.js"></script>
+   
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="./js/wow.js"></script>
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".content--c1"),{
+            max: 25,
+            speed: 400
+        });
+        </script>
+    <script>
+        var typed = new Typed('.typing', {
+    strings: ["WEB DEVELOPER", "WEB DESIGNER.","UX/UI DESIGNER.","WEB DEVELOPER.."],
+    typeSpeed: 40
+  });
+  
+        </script>
+    <script>
+    
+    new WOW().init();
+    
+    /*========== Fire wow js Plugin  ==========*/
+    
+    </script>  
+      
+</body>
+</html>

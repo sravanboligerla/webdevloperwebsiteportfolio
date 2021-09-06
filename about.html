@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sravan's About</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fonts/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./fonts/svgs/cricket-player-with-bat.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link href="./js/AOS/aos.css" rel="stylesheet">
+    <style>
+         *{
+            box-sizing: border-box;
+            transition: all 0.55s ease-in-out;
+           font-family: 'Segoe UI','poppins';
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin:0px;
+            padding:0px;
+           
+            background-color: #161a42; 
+            
+
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family:  'Segoe UI';
+        margin: 0;
+        padding: 0;
+        }   
+
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .navbar-nav .active a{
+           
+           background-image: linear-gradient(120deg,#d78205 20%, #ccc 100%);
+            border-radius:.4em;
+                    }
+            .nav-item1:focus,.nav-item1:hover{ 
+            border-bottom: 1px solid white;
+            border-bottom-left-radius: .4em;
+            border-bottom-right-radius: .4em;
+
+           }
+        .navbar-brand{
+            margin-left: -1em;
+        }
+        .brand{
+            width:2.7em;
+            height:2.5em;
+            position:relative;
+            left: .8em;
+            top:-.1em;
+        }
+        .bar {
+        display: block;
+        width: 1.5em;
+        height: .1em;
+        border-radius: 5px;
+        background-color: black;
+        margin: 6px 0px;
+    }
+  
+        .navbar-toggler{
+            border:none;
+            background: linear-gradient(120deg,#d78205 20%, #ccc 100%);
+        }
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler:active>.navbar{
+    background-color:#ccc;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin: .5em;
+}
+
+        .top-arrow{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display:none;
+            transition:all 2.35s ease-in-out 0s;
+        }
+        .top-disp{
+            display: block;
+            transition:all 2.35s ease-in-out 0s;
+            z-index: 55;
+        }
+        
+       
+        .section2 >.container {
+            padding: 2.3em;
+overflow: hidden;
+border: 0.5px solid rgba(233, 236, 239, .5);
+border-radius: 5px;
+box-shadow: 0 20px 80px 0 rgb(153 153 153 / 30%);
+background-color: rgba(233, 236, 239,1);
+width: 85%;
+        }
+     .section2 {
+    padding-top: 1.8em;
+    color: black;
+}
+.section2 .about-image {
+    position: relative;
+    margin-right: 46px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.section2 .about-image::before {
+    content: '';
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    bottom: -1.1em;
+    right: -1.3em;
+    background: linear-gradient(to left, #d78205 6%, #ccc 100%);
+    z-index: 1;
+    border-radius: 8px;
+}
+.section2 .about-image::after {
+    content: '';
+    position: absolute;
+    top: -0.7em;
+    left: -0.9em;
+    height: 20%;
+    width: 15%;
+    border-radius: 8px 0px;
+    border-left: 3px solid #d78205;
+    border-top: 3px solid #d78205;
+}
+.section2 .about-image img {
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+    width: 100%;
+}
+.section2 .about-info .main-title {
+    margin-bottom: 40px;
+}
+.main-title h2 {
+    position: relative;
+    display: inline-block;
+    color: #d78205;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+    padding-left: 45px;
+    padding-top: 10px;
+    z-index:40;
+    font-family:  'Segoe UI';
+}
+
+.main-title h2:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1.2rem;
+    right: -5rem;
+    width: 5rem;
+    border-top: 2px dotted #46454a;
+}
+
+.main-title h2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: -90px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 3px solid #36353b;
+    background: #d78205;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-sizing: content-box;
+} 
+.main-title .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 5rem;
+height: 2.1rem;
+    border: 1px dotted #46454a;
+    background: #1b1f45;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+    z-index: -1;
+}
+#name h3{
+    font-size:1.5rem;
+    color:#e9ecef;
+}
+
+.section2 .about-info p {
+    color: black;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-bottom: 30px;
+}
+.section2 .about-info p:first-of-type {
+    margin-bottom: 10px;
+}
+.section2 .about-info .personal-info {
+    position: relative;
+
+    padding: 35px 20px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color:#0b0d21;
+    border-top:1px solid rgba(255,255,255,0.5);
+    border-left:1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+.section2 .about-info .personal-info .info-bg {
+    position: absolute;
+    top: 0;
+    right: 23px;
+    font-size: 45px;
+    color: #0b0d21;
+    opacity: 0.1;
+}
+.section2 .about-info .personal-info p {
+    position: relative;
+    color: #d78205;
+    margin-bottom: 12px;
+    padding-left: 12px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.section2 .about-info .personal-info p span{
+    color:#0b0d21;
+}
+.section2 .about-info .personal-info p:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: -3px;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    border: 3px solid #03022a;
+    background: #f5865d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-sizing: content-box;
+}
+.btn-lg{
+    border-radius: 2rem;
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #d78205;
+}
+
+.section-title h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #276cd8;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+  color:#fff;
+  font-size:0.8em;
+}
+ .hobbies {
+    padding: 10em 0 0;
+
+}
+.hobbies .container{
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2em;
+
+}
+
+ .hobbies .section-title {
+    position: relative;
+}
+ 
+ .hobbies .integration-icons {
+    height: 4em;
+    width: 25em;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+}
+ .hobbies .integration-icons .icon {
+    height: 104px;
+    width: 104px;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 9, 128, .035), 0 7px 18px rgba(0, 9, 128, .05);
+    -moz-box-shadow: 0 5px 10px rgba(0, 9, 128, .035), 0 7px 18px rgba(0, 9, 128, .05);
+    -ms-box-shadow: 0 5px 10px rgba(0, 9, 128, .035), 0 7px 18px rgba(0, 9, 128, .05);
+    -o-box-shadow: 0 5px 10px rgba(0, 9, 128, .035), 0 7px 18px rgba(0, 9, 128, .05);
+    box-shadow: 0 5px 10px rgba(0, 9, 128, .035), 0 7px 18px rgba(0, 9, 128, .05);
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: move-icon;
+    animation-name: move-icon;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.hobbies .integration-icons .icon i {
+    color: #6a67ce;
+}
+ .hobbies .integration-icons .icon span {
+    position: absolute;
+    background: #161a42;
+    color: #fff;
+    padding: 3px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    bottom: -5px;
+}
+.hobbies .integration-icons .icon:nth-child(1) {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
+}
+ .hobbies .integration-icons .icon:nth-child(1) i {
+    font-size: 30px;
+}
+ .hobbies .integration-icons .icon:nth-child(2) {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 0;
+    top: 31px;
+    -webkit-animation-delay: -2.2s;
+    animation-delay: -2.2s;
+}
+.hobbies .integration-icons .icon:nth-child(2) i {
+    font-size: 27px;
+}
+ .hobbies .integration-icons .icon:nth-child(3) {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 53px;
+    bottom: 100px;
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+}
+.hobbies .integration-icons .icon:nth-child(3) i {
+    font-size: 30px;
+}
+ .hobbies .integration-icons .icon:nth-child(4) {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 100px;
+    bottom: 40px;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+ .hobbies .integration-icons .icon:nth-child(4) i {
+    font-size: 28px;
+}
+ .hobbies .integration-icons .icon:nth-child(5) {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 90px;
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+}
+ .hobbies .integration-icons .icon:nth-child(5) i {
+    font-size: 30px;
+}
+@-webkit-keyframes move-icon {
+    from {
+    -webkit-transform: translateY(15px) translateX(8px) rotate(10deg);
+    transform: translateY(15px) translateX(8px) rotate(10deg);
+}
+to {
+    -webkit-transform: translateY(-15px) translateX(-8px) rotate(0);
+    transform: translateY(-15px) translateX(-8px) rotate(0);
+}
+}@keyframes move-icon {
+    from {
+    -webkit-transform: translateY(15px) translateX(8px) rotate(10deg);
+    transform: translateY(15px) translateX(8px) rotate(10deg);
+}
+to {
+    -webkit-transform: translateY(-15px) translateX(-8px) rotate(0);
+    transform: translateY(-15px) translateX(-8px) rotate(0);
+}
+}
+.hobbies .integration-icons .move-icon from {
+    -webkit-transform: translateY(15px) translateX(8px) rotate(10deg);
+    transform: translateY(15px) translateX(8px) rotate(10deg);
+}
+ .hobbies .integration-icons .move-icon to {
+    -webkit-transform: translateY(-15px) translateX(-8px) rotate(0);
+    transform: translateY(-15px) translateX(-8px) rotate(0);
+}
+.counts {
+  padding:3em 0 2em;
+ 
+}
+/*.counts .container{
+    position: relative;
+    top:-440px;
+}*/
+
+.counts .count-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    border-radius: 5px;
+    margin-bottom: 1em;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    color:#ccc;
+    border-top:1px solid rgba(255,255,255,0.5);
+    border-left:1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+
+.counts .count-box i {
+  font-size: 3em;
+  line-height: 0;
+  margin-right: .9em;
+  color: #4154f1;
+  text-align: center;
+}
+
+.counts .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #e9ecef;
+  text-align: center;
+}
+
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: .8em;
+  text-align: center;
+}
+.inline-image-right .container{
+    padding:1em;
+}
+.inline-image-right img {
+  
+  border-radius: 5px;
+}
+.inline-image-right h1 {
+    font-size:2em;
+    font-family: teko;
+}
+.inline-image-right h4 {
+ font-size:1em;
+ margin: 1em;
+  font-family: 'Brygada 1918', serif;
+}
+.inline-image-right p{
+    font-size:1em;
+}
+.inline-image-right .butts-style .bttn {
+    color: black;
+}
+.inline-image-right.butts-style .bttn:hover {
+    color: #6a67ce;
+}
+.inline-image-right.butts-style .bttn:after, .hire-me .overlay .butts-style .bttn:before {
+    color: #6a67ce;
+}
+.inline-image-right.butts-style .bttn:after {
+    background-color: #fff;
+}
+.inline-image-right.butts-style .bttn:hover:after {
+    background-color: #fff;
+}
+.butts-style {
+    margin-top: 40px;
+}
+.butts-style .bttn {
+    color: #6a67ce;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 16px 25px 0 48px;
+    border-radius: 0;
+    position: relative;
+    transition: all .2s ease 0s;
+    z-index: 1;
+    font-size: 14px;
+}
+.butts-style .bttn:hover {
+    color: #fff;
+    border-color: transparent;
+}
+.butts-style .bttn:after, .butts-style .bttn:before {
+    color: white;
+    content: "→";
+    font-weight: 900;
+    font-family: LineIcons!important;
+    line-height: 48px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all .45s cubic-bezier(.65, 0, .076, 1);
+    text-align: center;
+}
+.butts-style .bttn:after {
+    background-color: #161a42;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: -1;
+    transition: all .45s cubic-bezier(.65, 0, .076, 1);
+}
+.butts-style .bttn:hover:after {
+    background-color:#161a42;
+    width: 100%;
+    }
+
+
+    .footer {
+            background-color: #0b0d21;;
+            padding: 30px 0;
+            margin-top: 60px;
+            color: #d78205;
+            transition:background-color 0.55s ease-in-out 0s;
+            text-align: center;
+        }
+
+        .footer .logo {
+            display: inline-block;
+            position: relative;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 1px;
+           
+            color: white;
+            text-decoration: none;
+            transition:all 0.3s ease-in-out 0s;
+            text-align: center;
+        }
+        .footer .logo:hover{
+            color:#d78205;
+            transition:all 0.3s ease-in-out 0s;
+            cursor: pointer;
+        }
+       
+
+        .footer .footer-social-icons {
+            margin-bottom: 0;
+            padding: .5rem 0;
+            text-align: center;
+        }
+
+        .footer .footer-social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer .footer-social-icons li a {
+            display: inline-block;
+            font-size: 1.2rem;
+            width: 1.8rem;
+            height: 2rem;
+            line-height: 2rem;
+            text-align: center;
+            color: white;
+            transition:all 0.3s ease-in-out 0s;
+        }
+
+        .footer .footer-social-icons li a:hover {
+            color:#d78205;
+            transition:all 0.3s ease-in-out 0s;
+            cursor: pointer;
+        }
+
+        .footer .copyright p {
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 1.8;
+            margin: 0;
+            color:lightgray;
+        }
+
+        .footer .copyright p a {
+            color:black;
+        }
+        @media (min-width:1200px){
+    .hobbies .container{
+        padding-bottom: 5em;
+    }
+}
+        @media (min-width:767px)and (max-width :1050px){
+    .section2 .about-info .personal-info p{
+        font-size: 0.6rem;
+    }
+}
+        /* Large devices (desktops, less than 1200px) */
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            #name h3{
+    font-size:1.3rem;
+    color:#e9ecef;
+}
+.hobbies {
+    padding: 10em 0 0;
+}
+.hobbies .container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10em;
+
+}
+        }
+        @media (max-width: 991.98px) {
+
+.nav-item1:focus,.nav-item1:hover{
+border-left: 1px solid white;
+border-bottom:none;  
+border-bottom-left-radius: .4em;
+border-bottom-right-radius: none;
+border-top-left-radius: .4em;  
+}
+.navbar-nav.active:hover,.navbar-nav .active:focus{
+   border-left: none;
+}
+
+}
+@media (max-width:350px){
+.navbar-brand{
+margin-left:-2em;
+}
+}
+
+       /* Medium devices (tablets, less than 992px) */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .hobbies .container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 1em;
+
+}.hobbies {
+    padding: 4em 0 0;
+}
+            .hobbies .integration-icons {
+    position: static;
+    width:15em;
+    height: 25em;
+}
+ .hobbies .integration-icons .icon {
+    width: 80px!important;
+    height: 80px!important;
+}
+ .hobbies .integration-icons .icon span {
+    font-size: 12px;
+}
+.hobbies .integration-icons .icon i {
+    color: #6a67ce;
+    font-size: 23px!important;
+}
+ .hobbies .integration-icons .icon:nth-child(4) {
+    bottom: 83px;
+}
+ .hobbies .integration-icons .icon:nth-child(3) {
+    bottom: 130px;
+}
+            #name h3{
+    font-size:1rem;
+    color:#e9ecef;
+}
+        }
+        @media (max-width:767px){
+        }
+        /* Small Devices */
+        @media (max-width: 767.98px) {
+             .hobbies .section-title:after {
+    left: -42%;
+    height: 513px;
+}
+.hobbies .integration-icons {
+    height: auto;
+    width: auto;
+    position: static;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.hobbies .integration-icons .icon:nth-child(4) {
+    bottom: 136px;
+}
+ .hobbies {
+    padding-top: 3.5em;
+}
+ .hobbies .integration-icons .icon {
+    animation: none;
+    width: 100px!important;
+    height: 100px!important;
+    position: relative!important;
+    top: 0!important;
+    left: 0!important;
+    bottom: 0!important;
+    right: 0!important;
+    margin: 20px auto;
+    margin-right: 20px;
+}
+ .hobbies .integration-icons .icon i {
+    font-size: 30px!important;
+}
+
+            .inline-image-right img {
+    display: inline-block;
+    margin-top:.5em;
+
+  }
+        
+    .section2 .about-image {
+        margin-right: 80px;
+        margin-left: 80px;
+        margin-bottom: 60px;
+    }
+    
+    .section2 .about-info h3 {
+        font-size: 18px;
+    }
+    .main-title .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 5rem;
+    height: 2.1rem;
+    border: 1px dotted #46454a;
+    background: #7c7ba8;
+    border-right: none;
+    border-top-left-radius:0px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+}
+    
+        }
+        /* Extra small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            .section2 .about-image {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    
+    .section2 .about-image:before,
+    .section2 .about-image:after {
+        display: none;
+    }
+    
+    .section2 .about-info .main-title {
+        margin-bottom: 3px;
+    }
+    #name h3 {
+    font-size: 1rem;
+    color: #e9ecef;
+    }
+    .section2 .about-info .personal-info {
+        padding: 20px 15px;
+    }
+    .main-title h2{
+    position: relative;
+    display: inline-block;
+    color:#d78205 ;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+    padding-left: 1.4em;
+    padding-top: .5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    z-index: 45;
+}
+ .main-title h2:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1.2rem;
+    right: -4.6rem;
+    width: 4rem;
+    border-top: 2px dotted #46454a;
+}
+.main-title h2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: -4.6rem;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 3px solid #36353b;
+    background: #f5865d;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    box-sizing: content-box;
+}
+ .main-title .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 5rem;
+    height: 2.1rem;
+    border: 1px dotted #46454a;
+    background: #1b1f45;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+}
+        }
+        @media (max-width:392px){
+            #name h3 {
+    font-size: .9rem;
+    color: #e9ecef;
+}
+        }
+@media(max-width:361px){
+    #name h3 {
+        font-size: .8rem;
+color: #e9ecef;
+font-weight: 600;
+}
+}
+@media (max-width:345px){
+    .section2 .about-info .personal-info p{
+        font-size: 0.8rem;
+    }
+    #name h3{
+        font-size: .7rem;
+    color: #e9ecef;
+    font-weight: 700;
+}
+.inline-image-right h4 {
+ font-size:.9em;
+ margin: 1em;
+  font-family: 'Brygada 1918', serif;
+}
+    }
+
+@media (max-width:328px){
+    .inline-image-right h1 {
+    font-size:1.5em;
+    font-family: teko;
+}
+.inline-image-right h4 {
+ font-size:.8em;
+ margin: 1em;
+  font-family: 'Brygada 1918', serif;
+}
+}
+@media (max-width:309px){
+    .section2 .about-info .personal-info p{
+        font-size: 0.6rem;
+    }
+}
+@media(max-width:317px){
+    .butts-style .bttn{
+        font-size:.7em;
+    }
+}
+        
+        @media (max-width: 305px){
+            .main-title h2{
+    position: relative;
+    display: inline-block;
+    color:#d78205 ;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    padding-left: 1.4em;
+padding-top: .8em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    z-index: 45;
+}
+ .main-title h2:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1.2rem;
+    right: -4.6rem;
+    width: 4rem;
+    border-top: 2px dotted #46454a;
+}
+.main-title h2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: -4.6rem;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 3px solid #36353b;
+    background: #f5865d;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    box-sizing: content-box;
+}
+ .main-title .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 5rem;
+    height: 2.1rem;
+    border: 1px dotted #46454a;
+    background: #1b1f45;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+}
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="btn btn-warning top-arrow" id="top-btn" style="background-image: linear-gradient(120deg,#d78205 20%, #ccc 100%);;border-radius: 50%;">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <section id="section1">
+        <nav class="navbar navbar-expand-lg navbar-dark wow bounce "data-wow-duration="1s" data-wow-delay=".2s"style="background-color:rgba(11, 13, 33, 1);">
+            <a class="navbar-brand mr-auto wow fadeInLeft"data-wow-duration="2s" data-wow-delay=".3s" href="./index.html"><img class="brand" src="./images/logooooo-removebg-preview.png" alt="">Sravan.</a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="bar "></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+                <li class="nav-item nav-item1">
+                  <a class="nav-link" href="./index.html">Home </a>
+                </li>
+                <li class="nav-item active"style="color:white;">
+                  <a class="nav-link" href="./about.html">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item nav-item1">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item nav-item1">
+                    <a class="nav-link" href="./services.html">Services</a>
+                  </li>
+                  <li class="nav-item nav-item1">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+              </ul>
+            </div>
+        </nav>      
+    </section>
+      
+ 
+    <section class="section2" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 wow fadeInRight" data-wow-duration="1s"data-aos-delay="100">
+                    <div class="about-image">
+                        <img class="img-fluid" src="./images/about.jpg" alt="" >
+                    </div>
+                </div>
+                <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s"data-aos-delay="100" >
+                    <div class="about-info">
+                        <div class="main-title ">
+                            <h2>About Me
+                              <span class="holder" ></span>  
+                            </h2>
+                        </div>
+                        <div id="name"><h3 >I am Sravan Boligerla,</h3>
+                         <h3>I'm a passionate web developer.. </h3></div>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi sed do eiusm tempor incididunt ut labore et dolore magna.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="personal-info"data-tilt data-tilt-scale="1.1">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p>Name: <span>Sravan Boligerla</span></p>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <p>Age: <span>23</span></p>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <p>Phone: <span>+91 8374003656</span></p>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <p>Address: <span>Kavali,AndhraPradesh</span></p>
+                                </div>
+
+                            </div>
+                            <span class="info-bg"><i class="fa fa-address-card"></i></span>
+                        </div>
+                        <div class="text-center">
+                        <button class="btn btn-success btn-lg text-white ml-auto"><a href=""style="font-size:1rem;padding-top:0px;padding-left:.5rem;padding-right:.5rem;padding-bottom:.6rem;margin-top:0px;">Download CV</a></button>
+                    </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+<!-- Start Hobbies-->
+<section class="hobbies bg-white">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section-title wow fadeInRight" data-wow-duration="1s">
+          <h2 class="h1">My Hobbies</h2>
+          <p class="text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam laborum dolorum fuga mollitia aliquid consequatur? Non, ratione, cumque accusantium quod iure magni ad dolorum assumenda, eius obcaecati consectetur esse doloribus.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="integration-icons wow fadeInLeft" data-wow-duration="1s">
+          <div class="icon"><i><img src="./images/hobbies/music-note.png" alt=""></i><span>Music</span></div>
+          <div class="icon"><i><img src="./images/hobbies/traveler.png" alt=""></i><span>Travel</span></div>
+          <div class="icon"><i><img src="./images/hobbies/motorbike.png" alt=""></i><span>Driving</span></div>
+          <div class="icon"><i><img src="./images/hobbies/open-book.png" alt=""></i><span>Reading</span></div>
+          <div class="icon"><i><img src="./images/hobbies/cricket.png" alt=""></i><span>Game</span></div>
+        </div>
+      </div>
+    </div>
+</div> 
+</section>
+  <!-- End Hobbies-->
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Facts</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+              </div>
+          <div class="row gy-4">
+  
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-emoji-smile-fill"></i>
+                <div>
+                  <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Happy Clients</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+                <div>
+                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Projects</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-headset" style="color: #15be56;"></i>
+                <div>
+                  <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Hours Of Support</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-award-fill"style="color: #ffd700;"></i>
+                <div>
+                  <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Awards</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+        
+      </section><!-- End Counts Section -->
+      <section class="inline-image-right"style="background-color: #fff;">
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-6">
+                    <img alt="Product Image" class="img-fluid" src="./images/web-designer.jpg">
+                </div>
+                <div class="col-md-6 text-center p-4">
+                    <h1>Why am I doing this?</h1>
+                    <h4><i class="fas fa-heart"></i>Because I love beautiful things....!!!</h4>
+                    <p class="lead">
+                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi...
+                    </p>
+                    <div class="butts-style" data-aos="flip-up"><a class="bttn bttn-lg " href="./portfolio.html">Check My Works Here..</a></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center" id="foot">
+        <div class="container">
+           <a class="logo" href="./index.html">Sravan.</a>
+            <ul class="footer-social-icons list-unstyled">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>All Rights Reserved &copy; 2021</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+         window.onscroll=function(){
+           
+            if (window.scrollY>500){
+                document.getElementById("top-btn").classList.add("top-disp");
+               }
+            if (window.scrollY<500){
+                document.getElementById("top-btn").classList.remove("top-disp");
+              }
+           
+        };
+        document.getElementById("top-btn").onclick=function(){
+            window.scrollTo(0,0);
+        };
+      
+       </script>
+    <script src="./js/AOS/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="./js/wow.js"></script>
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".personal-info"),{
+            max: 25,
+            speed: 400
+        });
+        VanillaTilt.init(document.querySelectorAll(".count-box"));
+        VanillaTilt.init(document.querySelectorAll(".icon"));
+        </script>
+    <script>
+    
+    new WOW().init();
+    
+        AOS.init( {duration: 1000,
+  easing: 'ease-in-out'});
+  
+    
+      </script>
+
+</body>
+</html>    

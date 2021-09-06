@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fonts/css/all.css">
+  
+    <link rel="stylesheet" href="./css/portcss/pluggins.min.css">
+    <link rel="stylesheet" href="./css/portcss/portstyle.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            transition: all 0.55s ease-in-out;
+            font-family: 'Segoe UI','poppins';
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin:0px;
+            padding:0px;
+           
+            background-color: #171b43;
+           
+
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family:  'Segoe UI';
+        margin: 0;
+        padding: 0;
+        }   
+
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .navbar-nav .active a{
+           
+           background-image: linear-gradient(120deg,#d78205 20%, #ccc 100%);
+            border-radius:.4em;
+                    }
+            .nav-item1:focus,.nav-item1:hover{ 
+            border-bottom: 1px solid white;
+            border-bottom-left-radius: .4em;
+            border-bottom-right-radius: .4em;
+
+           }
+        .navbar-brand{
+            margin-left: -1em;
+        }
+        .brand{
+            width:2.7em;
+            height:2.5em;
+            position:relative;
+            left: .8em;
+            top:-.1em;
+        }
+        .bar {
+        display: block;
+        width: 1.5em;
+        height: .1em;
+        border-radius: 5px;
+        background-color: black;
+        margin: 6px 0px;
+    }
+  
+        .navbar-toggler{
+            border:none;
+            background: linear-gradient(120deg,#d78205 20%, #ccc 100%);
+        }
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler:active>.navbar{
+    background-color:#ccc;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin: .5em;
+}
+.portfolio {
+    padding: 1.5em 0 1em;
+}
+   .top-arrow{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display:none;
+            transition:all 2.35s ease-in-out 0s;
+        }
+        .top-disp{
+            display: block;
+            transition:all 2.35s ease-in-out 0s;
+            z-index: 55;
+        }
+           
+        .holder{
+            position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 95px;
+    height: 40px;
+    border: 1px dotted #e9ecef;
+    background: #e9ecef;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+        }       
+       
+        .inline-image-right .container{
+    padding:1em;
+}
+.inline-image-right img {
+  
+  border-radius: 5px;
+}
+.inline-image-right h1 {
+    font-size:2em;
+    font-family: teko;
+}.inline-image-right h2 {
+    font-size:2em;
+    font-family: teko;
+}
+.inline-image-right h4 {
+ font-size:1em;
+ margin: 1em;
+  font-family: 'Brygada 1918', serif;
+}
+.inline-image-right p{
+    font-size:1em;
+}
+.inline-image-right .butts-style .bttn {
+    color: black;
+}
+.inline-image-right.butts-style .bttn:hover {
+    color: #6a67ce;
+}
+.inline-image-right.butts-style .bttn:after, .hire-me .overlay .butts-style .bttn:before {
+    color: #6a67ce;
+}
+.inline-image-right.butts-style .bttn:after {
+    background-color: #fff;
+}
+.inline-image-right.butts-style .bttn:hover:after {
+    background-color: #fff;
+}
+.butts-style {
+    margin-top: 40px;
+}
+.butts-style .bttn {
+    color: #6a67ce;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 16px 25px 0 48px;
+    border-radius: 0;
+    position: relative;
+    transition: all .2s ease 0s;
+    z-index: 1;
+    font-size: 14px;
+}
+.butts-style .bttn:hover {
+    color: #fff;
+    border-color: transparent;
+}
+.butts-style .bttn:after, .butts-style .bttn:before {
+    color: white;
+    content: "→";
+    font-weight: 900;
+    font-family: LineIcons!important;
+    line-height: 48px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all .45s cubic-bezier(.65, 0, .076, 1);
+    text-align: center;
+}
+.butts-style .bttn:after {
+    background-color: #161a42;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: -1;
+    transition: all .45s cubic-bezier(.65, 0, .076, 1);
+}
+.butts-style .bttn:hover:after {
+    background-color:#161a42;
+    width: 100%;
+    }
+#testimonials h2{
+    position: relative;
+    color: #d78205;
+}
+#testimonials h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+#testimonials h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #276cd8;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+
+        .footer {
+            background-color: #0b0d21;;
+            padding: 30px 0;
+            margin-top: 60px;
+            color: #d78205;
+            transition:background-color 0.55s ease-in-out 0s;
+            text-align: center;
+        }
+
+        .footer .logo {
+            display: inline-block;
+            position: relative;
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            
+            color: white;
+            text-decoration: none;
+            transition:all 0.3s ease-in-out 0s;
+            text-align: center;
+        }
+        .footer .logo:hover{
+            color:#d78205;
+            transition:all 0.3s ease-in-out 0s;
+            cursor: pointer;
+        }
+       
+
+        .footer .footer-social-icons {
+            margin-bottom: 0;
+            padding: .5rem 0;
+            text-align: center;
+        }
+
+        .footer .footer-social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer .footer-social-icons li a {
+            display: inline-block;
+            font-size: 1.2rem;
+            width: 1.8rem;
+            height: 2rem;
+            line-height: 2rem;
+            text-align: center;
+            color: white;
+            transition:all 0.3s ease-in-out 0s;
+        }
+
+        .footer .footer-social-icons li a:hover {
+            color:#d78205;
+            transition:all 0.3s ease-in-out 0s;
+            cursor: pointer;
+        }
+
+        .footer .copyright1 p {
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 1.8;
+            margin: 0;
+            color:lightgray;
+        }
+
+        .footer .copyright1 p a {
+            color:black;
+        }
+   
+          /* Large devices (desktops, less than 1200px) */
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+        }
+   
+
+        /* Small Devices */
+    @media (max-width: 767.98px) {
+     
+       
+    }
+    @media (max-width: 991.98px) {
+
+.nav-item1:focus,.nav-item1:hover{
+border-left: 1px solid white;
+border-bottom:none;  
+border-bottom-left-radius: .4em;
+border-bottom-right-radius: none;
+border-top-left-radius: .4em;  
+}
+.navbar-nav.active:hover,.navbar-nav .active:focus{
+   border-left: none;
+}
+
+}
+@media (max-width:350px){
+.navbar-brand{
+margin-left:-2em;
+}
+}
+    @media (max-width:765px){
+        .holder{
+            position: absolute;
+            top: 0;
+            left:3.5em;
+            display: block;
+            width: 95px;
+            height: 40px;
+            border: 1px dotted #46454a;
+            background: #7c7ba8;
+            border-right: none;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 10px;
+            z-index: -1;
+            }  
+    }
+
+    @media (max-width: 575.98px) {
+
+        .holder{
+            position: absolute;
+            top: 0;
+            left:3em;
+            display: block;
+            width: 95px;
+            height: 40px;
+            border: 1px dotted #46454a;
+            background: #7c7ba8;
+            border-right: none;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 10px;
+            z-index: -1;
+            }       
+
+
+            
+        }
+        @media (max-width:460px){
+            
+        .holder{
+            position: absolute;
+            top: 0;
+            left:1em;
+            display: block;
+            width: 95px;
+            height: 40px;
+            border: 1px dotted #46454a;
+            background: #7c7ba8;
+            border-right: none;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 10px;
+            z-index: -1;
+            } 
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="btn btn-warning top-arrow" id="top-btn" style="background-image: linear-gradient(120deg,#d78205 20%, #ccc 100%);;border-radius: 50%;">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <section id="section1">
+      <nav class="navbar navbar-expand-lg navbar-dark wow bounce "data-wow-duration="1s" data-wow-delay=".2s"style="background-color:rgba(11, 13, 33, 1);">
+        <a class="navbar-brand mr-auto wow fadeInLeft"data-wow-duration="2s" data-wow-delay=".3s" href="./index.html"><img class="brand" src="./images/logooooo-removebg-preview.png" alt="">Sravan.</a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="bar "></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+                <li class="nav-item nav-item1">
+                  <a class="nav-link" href="./index.html">Home </a>
+                </li>
+                <li class="nav-item nav-item1">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item active"style="color:white;">
+                    <a class="nav-link" href="./portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item nav-item1">
+                    <a class="nav-link" href="./services.html">Services</a>
+                  </li>
+                  <li class="nav-item nav-item1">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+              </ul>
+            </div>
+        </nav>      
+    </section>
+      
+
+    <section class="portfolio page-spy" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <!-- Start List Control-->
+            <div class="col-lg-3 col-md-12">
+              <h3 class="title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s"style="color:#d78205;border-bottom-left-radius:10px;
+              border-top-right-radius:2px; 
+              border-bottom-right-radius:10px;">Check My Works <span class="holder"></span></h3>
+              <div class="list-control wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                <ul class="list-unstyled">
+                  <li class=" active" data-filter="*">All</li>
+                  <li data-filter=".photography">Photography</li>
+                  <li data-filter=".webdesign">Web design</li>
+                  <li data-filter=".logo">logo</li>
+                  <li data-filter=".graphics">graphics</li>
+                  <li data-filter=".advertising">advertising</li>
+                  <li data-filter=".fashion">fashion</li>
+                </ul>
+              </div>
+            </div>
+            <!-- End List Control-->
+            <!-- Start Pictures-->
+            <div class="col-lg-9 col-md-12">
+              <div class="row grid wow fadeInRight" data-wow-duration="1s">
+                <!-- Start Single Picture-->
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-item photography">
+                  <div class="zoom-gallery"><a href="./images/img1.jpg" title="Project 1"><img class="img-fluid" src="./images/img1.jpg" alt="Project Photo">
+                      <div class="portfolio-overlay"></div>
+                      <div class="portfolio-text">
+                        <h3>Paper Bag</h3><span>Photography</span>
+                      </div></a></div>
+                </div>
+                <!-- End Single Picture-->
+                <!-- Start Single Picture-->
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-item logo">
+                  <div class="zoom-gallery"><a href="./images/img2.jpg" title="Project 2"><img class="img-fluid" src="./images/img2.jpg" alt="Project Photo">
+                      <div class="portfolio-overlay"></div>
+                      <div class="portfolio-text">
+                        <h3>Business Card</h3><span>logo</span>
+                      </div></a></div>
+                </div>
+                <!-- End Single Picture-->
+                <!-- Start Single Picture-->
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-item webdesign">
+                  <div class="zoom-gallery"><a href="./images/img3.jpg" title="Project 3"><img class="img-fluid" src="./images/img3.jpg" alt="Project Photo">
+                      <div class="portfolio-overlay"></div>
+                      <div class="portfolio-text">
+                        <h3>Mobile App</h3><span>web Design</span>
+                      </div></a></div>
+                </div>
+                <!-- End Single Picture-->
+                <!-- Start Single Picture-->
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-item graphics">
+                  <div class="zoom-gallery"><a href="./images/img4.jpg" title="Project 4"><img class="img-fluid" src="./images/img4.jpg" alt="Project Photo">
+                      <div class="portfolio-overlay"></div>
+                      <div class="portfolio-text">
+                        <h3>Modern T-Shirt</h3><span>graphics</span>
+                      </div></a></div>
+                </div>
+                <!-- End Single Picture-->
+                <!-- Start Single Picture-->
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-item photography">
+                  <div class="zoom-gallery"><a href="./images/img5.jpg" title="Project 5"><img class="img-fluid" src="./images/img5.jpg" alt="Project Photo">
+                      <div class="portfolio-overlay"></div>
+                      <div class="portfolio-text">
+                        <h3>Minimal Bag</h3><span>photography</span>
+                      </div></a></div>
+                </div>
+                <!-- End Single Picture-->
+                <!-- Start Single Picture-->
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-item advertising">
+                  <div class="zoom-gallery"><a href="./images/img6.jpg" title="Project 6"><img class="img-fluid" src="./images/img6.jpg" alt="Project Photo">
+                      <div class="portfolio-overlay"></div>
+                      <div class="portfolio-text">
+                        <h3>Heja Stockholm</h3><span>advertising</span>
+                      </div></a></div>
+                </div>
+                <!-- End Single Picture-->
+                <!-- Start Single Picture-->
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-item graphics">
+                  <div class="zoom-gallery"><a href="./images/img7.jpg" title="Project 7"><img class="img-fluid" src="./images/img7.jpg" alt="Project Photo">
+                      <div class="portfolio-overlay"></div>
+                      <div class="portfolio-text">
+                        <h3>Vinyl Record</h3><span>graphics</span>
+                      </div></a></div>
+                </div>
+                <!-- End Single Picture-->
+                <!-- Start Single Picture-->
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-item fashion">
+                  <div class="zoom-gallery"><a href="./images/img8.jpg" title="Project 8"><img class="img-fluid" src="./images/img8.jpg" alt="Project Photo">
+                      <div class="portfolio-overlay"></div>
+                      <div class="portfolio-text">
+                        <h3>White T-Shirt</h3><span>fashion</span>
+                      </div></a></div>
+                </div>
+                <!-- End Single Picture-->
+                <!-- Start Single Picture-->
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-item webdesign">
+                  <div class="zoom-gallery"><a href="./images/img9.jpg" title="Project 9"><img class="img-fluid" src="./images/img9.jpg" alt="Project Photo">
+                      <div class="portfolio-overlay"></div>
+                      <div class="portfolio-text">
+                        <h3>Clean & Groovy</h3><span>web Design</span>
+                      </div></a></div>
+                </div>
+                <!-- End Single Picture-->
+              </div>
+            </div>
+            <!-- End Pictures-->
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio-->
+     <!-- Start Testimonials-->
+     <section class="testimonials page-spy" id="testimonials">
+        <h2 class="pre text-center p-2" style="margin-bottom: 2.8em;">Testimonials</h2>
+        <div class="container ">
+          <div class="blog-slider wow fadeInUp" data-wow-duration="1s"data-tilt data-tilt-scale="1.1">
+            <div class="blog-slider__wrp swiper-wrapper">
+              <!-- Start One Item-->
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img"><img src="./images/testimonials/img-1.jpg" alt="Person 1"></div>
+                <div class="blog-slider__content"><span class="blog-slider__code">Mobile Developer</span>
+                  <div class="blog-slider__title">Mark D. Reagan</div>
+                  <div class="blog-slider__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure saepe minus culpa amet deleniti eveniet a nulla cum ut fuga iste, vitae tenetur aliquam incidunt voluptas deserunt maxime commodi harum!</div>
+                </div>
+              </div>
+              <!-- End One Item-->
+              <!-- Start One Item-->
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img"><img src="./images/testimonials/img-2.jpg" alt="Person 2"></div>
+                <div class="blog-slider__content"><span class="blog-slider__code">Talent Keeper</span>
+                  <div class="blog-slider__title">Shirley R. Oscar</div>
+                  <div class="blog-slider__text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure saepe minus culpa amet deleniti eveniet a nulla cum ut fuga iste, vitae tenetur aliquam incidunt voluptas deserunt maxime commodi harum!</div>
+                </div>
+              </div>
+              <!-- End One Item-->
+              <!-- Start One Item-->
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img"><img src="./images/testimonials/img-3.jpg" alt="Person 3"></div>
+                <div class="blog-slider__content"><span class="blog-slider__code">Software Tester</span>
+                  <div class="blog-slider__title">Gregory J. Hoehn</div>
+                  <div class="blog-slider__text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure saepe minus culpa amet deleniti eveniet a nulla cum ut fuga iste, vitae tenetur aliquam incidunt voluptas deserunt maxime commodi harum!</div>
+                </div>
+              </div>
+              <!-- End One Item-->
+            </div>
+            <div class="blog-slider__pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials-->
+      <section class="inline-image-right"style="background-color: #fff;">
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-6">
+                    <img alt="Product Image" class="img-fluid" src="./images/web-designer.jpg">
+                </div>
+                <div class="col-md-6 text-center p-4">
+                    <h1>Do you Like My Works???</h1>
+                    <h2>If you need to check My service??</h2>
+                    <h4><i class="fas fa-smile-beam" style="color:#276cd8"></i>Then Tap here<i class="far fa-hand-point-down"style="color:#d78205;"></i></h4>
+                    <div class="butts-style wow flipInX" data-wow-duration="1s" data-wow-delay=".6s"><a class="bttn bttn-lg " style="text-decoration: none;outline: none;"href="./services.html">click me..</a></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <footer class="footer text-center" id="foot">
+        <div class="container">
+           <a class="logo" href="./index.html">Sravan.</a>
+            <ul class="footer-social-icons list-unstyled">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright1">
+                <p>All Rights Reserved &copy; 2021</p>
+            </div>
+        </div>
+    </footer> 
+    <script>
+        window.onscroll=function(){
+          
+           if (window.scrollY>500){
+               document.getElementById("top-btn").classList.add("top-disp");
+              }
+           if (window.scrollY<500){
+               document.getElementById("top-btn").classList.remove("top-disp");
+             }
+          
+       };
+       document.getElementById("top-btn").onclick=function(){
+           window.scrollTo(0,0);
+       };
+     
+      </script>
+    
+    <script src="./js/portjs/pluggins.min.js"></script>
+    <script src="./js/portjs/app.js"></script>
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+       
+        </script>
+    <script>
+      new WOW().init();
+    </script>
+</body>
+</html>
